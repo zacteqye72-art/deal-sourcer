@@ -1,7 +1,23 @@
 {
-  "scraped_at": "2026-04-09T16:28:48.552735+00:00",
-  "total": 0,
+  "scraped_at": "2026-04-09T16:36:54.275323+00:00",
+  "total": 1,
   "new_count": 0,
-  "pet_wellness_count": 0,
-  "listings": []
+  "pet_wellness_count": 1,
+  "listings": [
+    {
+      "source": "microns",
+      "source_id": "ai-pet-rescue-youtube-channel",
+      "title": "AI Pet Rescue YouTube Channel",
+      "url": "https://www.microns.io/startup-listings/ai-pet-rescue-youtube-channel",
+      "asking_price": 5000.0,
+      "mrr": null,
+      "annual_profit": null,
+      "multiple": null,
+      "monetization_type": null,
+      "platform": null,
+      "description": "YouTube channel that posts AI videos of animals being rescued. YouTube with $17,954 in Annual Revenue. Built with YouTube, ChatGPT.",
+      "is_pet_wellness": true,
+      "created_at": "2026-04-09T16:33:56.885361"
+    }
+  ]
 }
