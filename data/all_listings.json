@@ -1,8 +1,8 @@
 {
-  "scraped_at": "2026-04-09T16:36:54.043744+00:00",
-  "total": 150,
-  "new_count": 150,
-  "pet_wellness_count": 1,
+  "scraped_at": "2026-04-09T16:45:38.014725+00:00",
+  "total": 200,
+  "new_count": 200,
+  "pet_wellness_count": 12,
   "listings": [
     {
       "source": "microns",
@@ -17,7 +17,7 @@
       "platform": null,
       "description": "Newsletter about online business and proven systems that actually work. Newsletter with $1,612 in Annual Revenue. Built with Beehiiv, YouTube, ChatGPT.",
       "is_pet_wellness": false,
-      "created_at": "2026-04-09T16:36:50.479930"
+      "created_at": "2026-04-09T16:45:31.071538"
     },
     {
       "source": "microns",
@@ -32,7 +32,7 @@
       "platform": null,
       "description": "Desktop tool that automates image generation using your own prompts or AI-generated ones. Micro-SaaS with $2,563 in Annual Revenue. Built with Replicate, Selenium, OpenAI, Python, Discord, Google Sheets, Google Cloud Platform.",
       "is_pet_wellness": false,
-      "created_at": "2026-04-09T16:36:48.916046"
+      "created_at": "2026-04-09T16:45:29.526828"
     },
     {
       "source": "microns",
@@ -47,7 +47,7 @@
       "platform": null,
       "description": "A newsletter for artists community. Newsletter with $45 in Annual Revenue. Built with Beehiiv.",
       "is_pet_wellness": false,
-      "created_at": "2026-04-09T16:36:47.347014"
+      "created_at": "2026-04-09T16:45:27.978284"
     },
     {
       "source": "microns",
@@ -62,7 +62,7 @@
       "platform": null,
       "description": "Weekly crypto newsletter with market analysis and the latest news on memecoins. Newsletter with $150 in Annual Revenue. Built with Beehiiv.",
       "is_pet_wellness": false,
-      "created_at": "2026-04-09T16:36:45.815766"
+      "created_at": "2026-04-09T16:45:26.422572"
     },
     {
       "source": "microns",
@@ -77,7 +77,7 @@
       "platform": null,
       "description": "CRM for OnlyFans creators and agencies to boost revenue through automated fan interactions, team management, and insightful analytics. Micro-SaaS with $22,000 in Annual Revenue. Built with Stripe, Node.js, AWS, Next.js.",
       "is_pet_wellness": false,
-      "created_at": "2026-04-09T16:36:44.265043"
+      "created_at": "2026-04-09T16:45:24.873084"
     },
     {
       "source": "microns",
@@ -92,7 +92,7 @@
       "platform": null,
       "description": "Content website for aspiring bartenders with handbook, recipes and more. Content Site with $4,000 in Annual Revenue. Built with WordPress.",
       "is_pet_wellness": false,
-      "created_at": "2026-04-09T16:36:42.734747"
+      "created_at": "2026-04-09T16:45:23.326036"
     },
     {
       "source": "microns",
@@ -107,7 +107,7 @@
       "platform": null,
       "description": "Premier online platform specializing in technology news, product reviews, and buying advice for the audio-visual (AV) industry. Content Site with $259,016 in Annual Revenue. Built with Python.",
       "is_pet_wellness": false,
-      "created_at": "2026-04-09T16:36:41.180297"
+      "created_at": "2026-04-09T16:45:21.788725"
     },
     {
       "source": "microns",
@@ -122,7 +122,7 @@
       "platform": null,
       "description": "Auto swiping Tinder bot with configurable settings. Micro-SaaS with $2,000 in Annual Revenue. Built with React.js, Node.js, MongoDB.",
       "is_pet_wellness": false,
-      "created_at": "2026-04-09T16:36:39.626018"
+      "created_at": "2026-04-09T16:45:20.236087"
     },
     {
       "source": "microns",
@@ -137,7 +137,7 @@
       "platform": null,
       "description": "SaaS platform that helps professionals build personal brands on LinkedIn. Micro-SaaS with $220,000 in Annual Revenue. Built with Stripe, TailwindCSS, Supabase, React, Framer, Ruby On Rails.",
       "is_pet_wellness": false,
-      "created_at": "2026-04-09T16:36:38.072247"
+      "created_at": "2026-04-09T16:45:18.614886"
     },
     {
       "source": "microns",
@@ -152,7 +152,7 @@
       "platform": null,
       "description": "A coloring book mobile app that's connected to WordPress. Mobile App with $300 in Annual Revenue. Built with WordPress, PHP, Flutter, MySQL.",
       "is_pet_wellness": false,
-      "created_at": "2026-04-09T16:36:36.538760"
+      "created_at": "2026-04-09T16:45:17.039863"
     },
     {
       "source": "microns",
@@ -167,7 +167,7 @@
       "platform": null,
       "description": "AI-powered lead generation and cold email outreach platform. Micro-SaaS with $1,300 in Annual Revenue. Built with AWS, Bubble, Python.",
       "is_pet_wellness": false,
-      "created_at": "2026-04-09T16:36:34.957797"
+      "created_at": "2026-04-09T16:45:15.488055"
     },
     {
       "source": "microns",
@@ -182,7 +182,7 @@
       "platform": null,
       "description": "Social space apps for iOS and Android that allow cocktail enthusiasts to explore and share recipes. Mobile App with $2,709 in Annual Revenue. Built with Expo, Replicate, React Native, Supabase, OpenAI.",
       "is_pet_wellness": false,
-      "created_at": "2026-04-09T16:36:33.434793"
+      "created_at": "2026-04-09T16:45:13.939849"
     },
     {
       "source": "microns",
@@ -197,7 +197,7 @@
       "platform": null,
       "description": "Chrome extension for increasing reach on Instagram. Browser Extension with $1,092 in Annual Revenue. Built with JavaScript, Google OAuth, Google Analytics, React, MongoDB.",
       "is_pet_wellness": false,
-      "created_at": "2026-04-09T16:36:31.883944"
+      "created_at": "2026-04-09T16:45:12.355089"
     },
     {
       "source": "microns",
@@ -212,7 +212,7 @@
       "platform": null,
       "description": "Chrome extension that lets users record, and download audio directly from their browser. Browser Extension with $720 in Annual Revenue. Built with TypeScript, Stripe, Vue.js, Supabase, CSS, HTML.",
       "is_pet_wellness": false,
-      "created_at": "2026-04-09T16:36:30.315113"
+      "created_at": "2026-04-09T16:45:10.804967"
     },
     {
       "source": "microns",
@@ -227,7 +227,7 @@
       "platform": null,
       "description": "Build any chat use case into your product. Micro-SaaS with $78,400 in Annual Revenue. Built with Golang, MongoDB, Flutter, React, Nuxt, VueJs, Java, Redis.",
       "is_pet_wellness": false,
-      "created_at": "2026-04-09T16:36:28.751645"
+      "created_at": "2026-04-09T16:45:09.243776"
     },
     {
       "source": "microns",
@@ -242,7 +242,7 @@
       "platform": null,
       "description": "Newsletter reaching 83,000+ CFOs & financial executives. Newsletter with $6,167 in Annual Revenue. Built with Beehiiv.",
       "is_pet_wellness": false,
-      "created_at": "2026-04-09T16:36:27.220935"
+      "created_at": "2026-04-09T16:45:07.695399"
     },
     {
       "source": "microns",
@@ -257,7 +257,7 @@
       "platform": null,
       "description": "Made for you Carrd websites and templates. Agency with $1,000 in Annual Revenue. Built with Carrd.",
       "is_pet_wellness": false,
-      "created_at": "2026-04-09T16:36:25.646330"
+      "created_at": "2026-04-09T16:45:06.061139"
     },
     {
       "source": "microns",
@@ -272,7 +272,7 @@
       "platform": null,
       "description": "Cardano native token platform enabling secure and low-cost asset creation. Web App with $15,000 in Annual Revenue. Built with Node.js, Next.js, PostgreSQL.",
       "is_pet_wellness": false,
-      "created_at": "2026-04-09T16:36:24.103576"
+      "created_at": "2026-04-09T16:45:04.504008"
     },
     {
       "source": "microns",
@@ -287,7 +287,7 @@
       "platform": null,
       "description": "Directory of software tools for creators and startups. Directory with $35 in Annual Revenue. Built with Laravel, Gumroad, Bootstrap, HTML.",
       "is_pet_wellness": false,
-      "created_at": "2026-04-09T16:36:22.559837"
+      "created_at": "2026-04-09T16:45:02.939983"
     },
     {
       "source": "microns",
@@ -302,7 +302,7 @@
       "platform": null,
       "description": "Custom business support chatbot. Add-on with $100 in Annual Revenue. Built with React, Pinecone and Supabase.",
       "is_pet_wellness": false,
-      "created_at": "2026-04-09T16:36:21.011509"
+      "created_at": "2026-04-09T16:45:01.417364"
     },
     {
       "source": "microns",
@@ -317,7 +317,7 @@
       "platform": null,
       "description": "Get business ideas with actionable steps every week. Newsletter with $0 in Annual Revenue. Built with Webflow and Beehiiv.",
       "is_pet_wellness": false,
-      "created_at": "2026-04-09T16:36:19.475915"
+      "created_at": "2026-04-09T16:44:59.832831"
     },
     {
       "source": "microns",
@@ -332,7 +332,7 @@
       "platform": null,
       "description": "Newsletter about self-development and business. Newsletter with $267 in Annual Revenue. Built with Beehiiv.",
       "is_pet_wellness": false,
-      "created_at": "2026-04-09T16:36:17.917556"
+      "created_at": "2026-04-09T16:44:58.277286"
     },
     {
       "source": "microns",
@@ -347,7 +347,7 @@
       "platform": null,
       "description": "All-in-one expense tracker and budgeting app with a subscription-based revenue model. Mobile App with $550 in Annual Revenue. Built with React Native, RevenueCat.",
       "is_pet_wellness": false,
-      "created_at": "2026-04-09T16:36:16.371659"
+      "created_at": "2026-04-09T16:44:56.742489"
     },
     {
       "source": "microns",
@@ -362,7 +362,7 @@
       "platform": null,
       "description": "SaaS extension built for the Bubble.io ecosystem. Micro-SaaS with $29,097 in Annual Revenue. Built with Stripe, JavaScript, Bubble, Framer.",
       "is_pet_wellness": false,
-      "created_at": "2026-04-09T16:36:14.809562"
+      "created_at": "2026-04-09T16:44:55.187096"
     },
     {
       "source": "microns",
@@ -377,7 +377,7 @@
       "platform": null,
       "description": "Snooze tabs, windows and todos for later. Extension with $232 in Annual Revenue. Built with JavaScript and jQuery.",
       "is_pet_wellness": false,
-      "created_at": "2026-04-09T16:36:13.280427"
+      "created_at": "2026-04-09T16:44:53.639598"
     },
     {
       "source": "microns",
@@ -392,7 +392,7 @@
       "platform": null,
       "description": "Browser extension that elevates the ChatGPT user experience with enhanced productivity features. Browser Extension with $54,200 in Annual Revenue. Built with TypeScript, Express.js, Node.js, Digital Ocean, JavaScript, MongoDB, Lemon Squeezy.",
       "is_pet_wellness": false,
-      "created_at": "2026-04-09T16:36:11.731217"
+      "created_at": "2026-04-09T16:44:52.100589"
     },
     {
       "source": "microns",
@@ -407,7 +407,7 @@
       "platform": null,
       "description": "Manager for Salesforce browser extensions and AppExchange listing. Browser Extension with $18,000 in Annual Revenue. Built with Node.js, JavaScript.",
       "is_pet_wellness": false,
-      "created_at": "2026-04-09T16:36:10.175820"
+      "created_at": "2026-04-09T16:44:50.564053"
     },
     {
       "source": "microns",
@@ -422,7 +422,7 @@
       "platform": null,
       "description": "Platform connecting brands with niche tech microinfluencers. Micro-SaaS with $945 in Annual Revenue. Built with Stripe, Next.js, Supabase, Resend.",
       "is_pet_wellness": false,
-      "created_at": "2026-04-09T16:36:08.608669"
+      "created_at": "2026-04-09T16:44:48.996698"
     },
     {
       "source": "microns",
@@ -437,7 +437,7 @@
       "platform": null,
       "description": "Daily newsletter for domain lovers. Newsletter with $95 in Annual Revenue. Built with Carrd and Convertkit.",
       "is_pet_wellness": false,
-      "created_at": "2026-04-09T16:36:07.057132"
+      "created_at": "2026-04-09T16:44:47.445603"
     },
     {
       "source": "microns",
@@ -452,7 +452,7 @@
       "platform": null,
       "description": "Book summary app with 10k+ installs & strong organic growth. Mobile App with $6,500 in Annual Revenue. Built with Supabase, Flutter, RevenueCat.",
       "is_pet_wellness": false,
-      "created_at": "2026-04-09T16:36:05.474433"
+      "created_at": "2026-04-09T16:44:45.905843"
     },
     {
       "source": "microns",
@@ -467,7 +467,7 @@
       "platform": null,
       "description": "Body metrics tracker with 6.9k organic users and a scalable Flutter/Firebase stack. Mobile App with $375 in Annual Revenue. Built with Flutter, Firebase, Google Firestore, Apple OAuth.",
       "is_pet_wellness": false,
-      "created_at": "2026-04-09T16:36:03.912822"
+      "created_at": "2026-04-09T16:44:44.359338"
     },
     {
       "source": "microns",
@@ -482,7 +482,7 @@
       "platform": null,
       "description": "App that helps locate your misplaced Bluetooth devices. Mobile App with $13,928 in Annual Revenue. Built with Swift, SwiftUI.",
       "is_pet_wellness": false,
-      "created_at": "2026-04-09T16:36:02.388585"
+      "created_at": "2026-04-09T16:44:42.799027"
     },
     {
       "source": "microns",
@@ -497,7 +497,7 @@
       "platform": null,
       "description": "Agency specializing in blockchain and Web3 plugin development for WordPress. Agency with $22,130 in Annual Revenue. Built with TypeScript, WordPress, Express.js, Node.js, Docker, JavaScript, PHP, WooCommerce, Vue.js, CSS, MySQL, JQuery, HTML, Rust, Socket.io.",
       "is_pet_wellness": false,
-      "created_at": "2026-04-09T16:36:00.828394"
+      "created_at": "2026-04-09T16:44:41.235671"
     },
     {
       "source": "microns",
@@ -512,7 +512,7 @@
       "platform": null,
       "description": "Directory of black Friday deals for no-code and no-coders. Directory with $50 in Annual Revenue. Built with Carrd, Airtable",
       "is_pet_wellness": false,
-      "created_at": "2026-04-09T16:35:59.266586"
+      "created_at": "2026-04-09T16:44:39.654049"
     },
     {
       "source": "microns",
@@ -527,7 +527,7 @@
       "platform": null,
       "description": "B2B SaaS platform enabling trading brands to launch their own branded trading journals. Micro-SaaS with $45,000 in Annual Revenue. Built with Stripe, Digital Ocean, Cloudinary, PostgreSQL, Python, React, Heroku.",
       "is_pet_wellness": false,
-      "created_at": "2026-04-09T16:35:57.693883"
+      "created_at": "2026-04-09T16:44:38.041780"
     },
     {
       "source": "microns",
@@ -542,7 +542,7 @@
       "platform": null,
       "description": "B2B contact lookup tool to find direct phone numbers and emails of 385M+ professionals using LinkedIn URLs. Micro-SaaS with $15,200 in Annual Revenue. Built with WordPress, Node.js, React, MongoDB.",
       "is_pet_wellness": false,
-      "created_at": "2026-04-09T16:35:56.166962"
+      "created_at": "2026-04-09T16:44:36.475604"
     },
     {
       "source": "microns",
@@ -557,7 +557,7 @@
       "platform": null,
       "description": "All-in-one B2B lead generation SaaS with premium domain & organic user growth. Micro-SaaS with $6,583 in Annual Revenue. Built with Stripe, Next.js, PostgreSQL.",
       "is_pet_wellness": false,
-      "created_at": "2026-04-09T16:35:54.632465"
+      "created_at": "2026-04-09T16:44:34.889849"
     },
     {
       "source": "microns",
@@ -572,7 +572,7 @@
       "platform": null,
       "description": "No code e-commerce platform to create online stores. Micro-SaaS with $3,100 in Annual Revenue. Built with TypeScript, Node.js, GitHub, GraphQL, Cloudflare, TailwindCSS, Next.js, Google Analytics, CSS, React, Resend, MongoDB, HTML, Rust, Redis, Microsoft Clarity.",
       "is_pet_wellness": false,
-      "created_at": "2026-04-09T16:35:53.055828"
+      "created_at": "2026-04-09T16:44:33.340584"
     },
     {
       "source": "microns",
@@ -587,7 +587,7 @@
       "platform": null,
       "description": "All-in-one solution built for Amazon resellers who want to maximize profits and stay competitive. Micro-SaaS with $72,530 in Annual Revenue. Built with Node.js, React.",
       "is_pet_wellness": false,
-      "created_at": "2026-04-09T16:35:51.531356"
+      "created_at": "2026-04-09T16:44:31.786536"
     },
     {
       "source": "microns",
@@ -602,7 +602,7 @@
       "platform": null,
       "description": "Slack-based async standup app helping remote teams streamline daily check-ins without meetings. Micro-SaaS with $975 in Annual Revenue. Built with Node.js, AWS, Amazon, React, Gatsby.",
       "is_pet_wellness": false,
-      "created_at": "2026-04-09T16:35:49.974174"
+      "created_at": "2026-04-09T16:44:30.243694"
     },
     {
       "source": "microns",
@@ -617,7 +617,7 @@
       "platform": null,
       "description": "LinkedIn outreach automation tool for invites and follow-ups. Browser Extension with $21,400 in Annual Revenue. Built with Express.js, Node.js, JavaScript, JQuery.",
       "is_pet_wellness": false,
-      "created_at": "2026-04-09T16:35:48.416666"
+      "created_at": "2026-04-09T16:44:28.693284"
     },
     {
       "source": "microns",
@@ -632,7 +632,7 @@
       "platform": null,
       "description": "SaaS platform that automatically books golf tee times for users using custom automation bots. Micro-SaaS with $35,415 in Annual Revenue. Built with Stripe, Docker, JavaScript, Cloudflare, PostgreSQL, OpenAI, HTML.",
       "is_pet_wellness": false,
-      "created_at": "2026-04-09T16:35:46.865123"
+      "created_at": "2026-04-09T16:44:27.149516"
     },
     {
       "source": "microns",
@@ -647,7 +647,7 @@
       "platform": null,
       "description": "Stable, low-maintenance git-to-server deployment SaaS with loyal customers. Micro-SaaS with $2,860 in Annual Revenue. Built with TypeScript, Stripe, Express.js, Node.js, Docker, React, MongoDB, Redis.",
       "is_pet_wellness": false,
-      "created_at": "2026-04-09T16:35:45.303218"
+      "created_at": "2026-04-09T16:44:25.597937"
     },
     {
       "source": "microns",
@@ -662,7 +662,7 @@
       "platform": null,
       "description": "Audio equalizer that lets users adjust the balance between frequency components using a 10-band EQ. Browser Extension with $12,000 in Annual Revenue. Built with JavaScript, CSS, React, HTML.",
       "is_pet_wellness": false,
-      "created_at": "2026-04-09T16:35:43.746307"
+      "created_at": "2026-04-09T16:44:24.059193"
     },
     {
       "source": "microns",
@@ -677,7 +677,7 @@
       "platform": null,
       "description": "Two specialized Apify actors: a niche data scraper and an AI video maker. Web App with $240 in Annual Revenue. Built with Node.js, JavaScript, Gemini API.",
       "is_pet_wellness": false,
-      "created_at": "2026-04-09T16:35:42.186778"
+      "created_at": "2026-04-09T16:44:22.512692"
     },
     {
       "source": "microns",
@@ -692,7 +692,7 @@
       "platform": null,
       "description": "AI-powered antique identifier app for iOS that recognizes items from photos and provides instant price estimates and details. Mobile App with $267 in Annual Revenue. Built with Expo, AWS, React Native, Firebase.",
       "is_pet_wellness": false,
-      "created_at": "2026-04-09T16:35:40.658324"
+      "created_at": "2026-04-09T16:44:20.961101"
     },
     {
       "source": "microns",
@@ -707,7 +707,7 @@
       "platform": null,
       "description": "Catalog of free popular games for Android. Marketplace with $5,000 in Annual Revenue. Built with PHP.",
       "is_pet_wellness": false,
-      "created_at": "2026-04-09T16:35:39.134834"
+      "created_at": "2026-04-09T16:44:19.438103"
     },
     {
       "source": "microns",
@@ -722,7 +722,7 @@
       "platform": null,
       "description": "All-in-one analytics solution for the Web, Android, iOS and React Native. Micro-SaaS with $2,400 in Annual Revenue. Built with Node.js, TailwindCSS, Next.js, React.",
       "is_pet_wellness": false,
-      "created_at": "2026-04-09T16:35:37.564164"
+      "created_at": "2026-04-09T16:44:17.835138"
     },
     {
       "source": "microns",
@@ -737,7 +737,7 @@
       "platform": null,
       "description": "Custom print-on-demand t-shirts and apparel through Amazon’s official Merch on Demand platform. E-commerce with $403 in Annual Revenue. Built with Amazon.",
       "is_pet_wellness": false,
-      "created_at": "2026-04-09T16:35:36.010430"
+      "created_at": "2026-04-09T16:44:16.269915"
     },
     {
       "source": "microns",
@@ -752,7 +752,7 @@
       "platform": null,
       "description": "In-depth research on alternative assets. Newsletter with $1,100 in Annual Revenue. Built with Memberful, ConvertKit, Discord, Fathom, Next.js.",
       "is_pet_wellness": false,
-      "created_at": "2026-04-09T16:35:34.441827"
+      "created_at": "2026-04-09T16:44:14.712572"
     },
     {
       "source": "microns",
@@ -767,7 +767,7 @@
       "platform": null,
       "description": "SEO and content automation platform that helps grow traffic faster with less effort. Micro-SaaS with $15,155 in Annual Revenue. Built with Django, OpenAI, Python, React.",
       "is_pet_wellness": false,
-      "created_at": "2026-04-09T16:35:32.913458"
+      "created_at": "2026-04-09T16:44:13.165255"
     },
     {
       "source": "microns",
@@ -782,7 +782,7 @@
       "platform": null,
       "description": "All-in-one content writing tool with keyword research, AI content writing and SERP tracking for SMBs and bloggers. Micro-SaaS with $14,000 in Annual Revenue. Built with Laravel, Vue.js.",
       "is_pet_wellness": false,
-      "created_at": "2026-04-09T16:35:31.359061"
+      "created_at": "2026-04-09T16:44:11.610237"
     },
     {
       "source": "microns",
@@ -797,7 +797,7 @@
       "platform": null,
       "description": "Platform for streamlining business operations with a powerful, unified toolkit. Micro-SaaS with $5,900 in Annual Revenue. Built with Node.js, Next.js, PostgreSQL.",
       "is_pet_wellness": false,
-      "created_at": "2026-04-09T16:35:29.801859"
+      "created_at": "2026-04-09T16:44:10.052264"
     },
     {
       "source": "microns",
@@ -812,7 +812,7 @@
       "platform": null,
       "description": "Platform that brings together multiple artificial intelligence models and integrates them into a single interface. Micro-SaaS with $3,800 in Annual Revenue. Built with Stripe, Next.js, Auth0.",
       "is_pet_wellness": false,
-      "created_at": "2026-04-09T16:35:28.229562"
+      "created_at": "2026-04-09T16:44:08.487851"
     },
     {
       "source": "microns",
@@ -827,7 +827,7 @@
       "platform": null,
       "description": "Platform sending instant alerts when Congress members like Pelosi trade stocks, helping users act fast. Micro-SaaS with $115 in Annual Revenue. Built with Docker, Posthog, PostgreSQL, Python.",
       "is_pet_wellness": false,
-      "created_at": "2026-04-09T16:35:26.678087"
+      "created_at": "2026-04-09T16:44:06.936787"
     },
     {
       "source": "microns",
@@ -842,7 +842,7 @@
       "platform": null,
       "description": "AI-powered editor for creating short-form content 10x faster. Web App with $1,000 in Annual Revenue. Built with Paypal, Next.js, Supabase.",
       "is_pet_wellness": false,
-      "created_at": "2026-04-09T16:35:25.115937"
+      "created_at": "2026-04-09T16:44:05.056296"
     },
     {
       "source": "microns",
@@ -857,7 +857,7 @@
       "platform": null,
       "description": "AI-powered platform that revolutionizes content creation. Micro-SaaS with $2,400 in Annual Revenue. Built with JavaScript, PHP, TailwindCSS, CSS, OpenAI.",
       "is_pet_wellness": false,
-      "created_at": "2026-04-09T16:35:23.582521"
+      "created_at": "2026-04-09T16:44:03.511846"
     },
     {
       "source": "microns",
@@ -872,7 +872,7 @@
       "platform": null,
       "description": "AI writing platform for startups and business owners. Micro-SaaS with $2,250 in Annual Revenue. Built with React, Node.js, GPT-4.",
       "is_pet_wellness": false,
-      "created_at": "2026-04-09T16:35:22.026724"
+      "created_at": "2026-04-09T16:44:01.966042"
     },
     {
       "source": "microns",
@@ -887,7 +887,7 @@
       "platform": null,
       "description": "AI Voiceover platform with powerful AI integrations and 800+ natural-sounding voices. Micro-SaaS with $537 in Annual Revenue. Built with AWS, JavaScript, PHP, TailwindCSS, HTML, Azure.",
       "is_pet_wellness": false,
-      "created_at": "2026-04-09T16:35:20.505144"
+      "created_at": "2026-04-09T16:44:00.427977"
     },
     {
       "source": "microns",
@@ -902,7 +902,7 @@
       "platform": null,
       "description": "AI-powered voice clone mobile app for TikTok voiceovers. Mobile App with $180 in Annual Revenue. Built with Replicate, Swift, Firebase.",
       "is_pet_wellness": false,
-      "created_at": "2026-04-09T16:35:18.972285"
+      "created_at": "2026-04-09T16:43:58.857827"
     },
     {
       "source": "microns",
@@ -917,7 +917,7 @@
       "platform": null,
       "description": "AI-powered visualizer plugin for Shopify home decor merchants. Shopify App with $1,217 in Annual Revenue. Built with Shopify, Cloudflare, Next.js, Gemini API.",
       "is_pet_wellness": false,
-      "created_at": "2026-04-09T16:35:17.425035"
+      "created_at": "2026-04-09T16:43:57.317634"
     },
     {
       "source": "microns",
@@ -932,7 +932,7 @@
       "platform": null,
       "description": "All-in-one creative suite combining AI video, AI image, and advanced AI tools in a single platform. Micro-SaaS with $19,000 in Annual Revenue. Built with Next.js, Supabase.",
       "is_pet_wellness": false,
-      "created_at": "2026-04-09T16:35:15.896295"
+      "created_at": "2026-04-09T16:43:55.774449"
     },
     {
       "source": "microns",
@@ -947,7 +947,7 @@
       "platform": null,
       "description": "Platform that transforms ordinary selfies into professional, studio-quality photos. Web App with $1,503 in Annual Revenue. Built with Weweb, Xano, Amazon S3.",
       "is_pet_wellness": false,
-      "created_at": "2026-04-09T16:35:14.334488"
+      "created_at": "2026-04-09T16:43:54.222210"
     },
     {
       "source": "microns",
@@ -962,7 +962,7 @@
       "platform": null,
       "description": "Platform that turns podcasts, videos, and YouTube content into transcripts, summaries, and repurposed content using AI. Micro-SaaS with $3,823 in Annual Revenue. Built with OpenAI, Bubble, Framer.",
       "is_pet_wellness": false,
-      "created_at": "2026-04-09T16:35:12.833940"
+      "created_at": "2026-04-09T16:43:52.683272"
     },
     {
       "source": "microns",
@@ -977,7 +977,7 @@
       "platform": null,
       "description": "A simple design tool helping generate product packaging designs. Micro-SaaS with $650 in Annual Revenue. Built with Digital Ocean, TailwindCSS, Next.js, Supabase, DALL-E.",
       "is_pet_wellness": false,
-      "created_at": "2026-04-09T16:35:11.198762"
+      "created_at": "2026-04-09T16:43:51.102361"
     },
     {
       "source": "microns",
@@ -992,7 +992,7 @@
       "platform": null,
       "description": "Mobile app that allows users to create personalized stories and chat with their own custom characters. Mobile App with $1,442 in Annual Revenue. Built with Expo, AWS, React Native, Cloudflare, RevenueCat, Firebase, Gemini API.",
       "is_pet_wellness": false,
-      "created_at": "2026-04-09T16:35:09.631554"
+      "created_at": "2026-04-09T16:43:49.560447"
     },
     {
       "source": "microns",
@@ -1007,7 +1007,7 @@
       "platform": null,
       "description": "SaaS platform for building AI chatbots for e-commerce. Micro-SaaS with $570 in Annual Revenue. Built with Stripe, Google Cloud Storage, Shopify, Next.js, WooCommerce, Google Analytics, Python, React, MongoDB, Firebase, Gemini API, Google Cloud Platform.",
       "is_pet_wellness": false,
-      "created_at": "2026-04-09T16:35:08.068638"
+      "created_at": "2026-04-09T16:43:48.012324"
     },
     {
       "source": "microns",
@@ -1022,7 +1022,7 @@
       "platform": null,
       "description": "Scanner built specifically for AI search optimization audit. Web App with $230 in Annual Revenue. Built with Stripe, Next.js, Supabase, Vercel.",
       "is_pet_wellness": false,
-      "created_at": "2026-04-09T16:35:06.516801"
+      "created_at": "2026-04-09T16:43:46.463922"
     },
     {
       "source": "microns",
@@ -1037,7 +1037,7 @@
       "platform": null,
       "description": "Highly modular NextJS AI Boilerplate that allows users to ship an AI App super fast. Web App with $23,411 in Annual Revenue. Built with TypeScript, Replicate, Next.js, Supabase, OpenAI, Vercel, Pinecone.",
       "is_pet_wellness": false,
-      "created_at": "2026-04-09T16:35:04.967580"
+      "created_at": "2026-04-09T16:43:44.915116"
     },
     {
       "source": "microns",
@@ -1052,7 +1052,7 @@
       "platform": null,
       "description": "It helps job seekers optimize your resume for any job. Micro-SaaS with $864 in Annual Revenue. Built with OpenAI, Webflow, Memberstack, RapidAPI, Pdf.co.",
       "is_pet_wellness": false,
-      "created_at": "2026-04-09T16:35:03.398703"
+      "created_at": "2026-04-09T16:43:43.352005"
     },
     {
       "source": "microns",
@@ -1067,7 +1067,7 @@
       "platform": null,
       "description": "AI-powered virtual staging platform that transforms empty or outdated rooms into beautifully furnished spaces. Micro-SaaS with $1,090 in Annual Revenue. Built with Stripe, Express.js, Node.js, React, Vercel, Firebase.",
       "is_pet_wellness": false,
-      "created_at": "2026-04-09T16:35:01.875232"
+      "created_at": "2026-04-09T16:43:41.803313"
     },
     {
       "source": "microns",
@@ -1082,7 +1082,7 @@
       "platform": null,
       "description": "AI prompt generator that helps users create structured, high-quality prompts for business, study, coding, content, and design. Mobile App with $763 in Annual Revenue. Built with Flutter, RevenueCat, ChatGPT, Firebase, Gemini API.",
       "is_pet_wellness": false,
-      "created_at": "2026-04-09T16:35:00.302253"
+      "created_at": "2026-04-09T16:43:40.249276"
     },
     {
       "source": "microns",
@@ -1097,7 +1097,7 @@
       "platform": null,
       "description": "Helps to write emails, posts, and articles faster. Extension with $265 in Annual Revenue. Built with React.",
       "is_pet_wellness": false,
-      "created_at": "2026-04-09T16:34:58.777655"
+      "created_at": "2026-04-09T16:43:38.725517"
     },
     {
       "source": "microns",
@@ -1112,7 +1112,7 @@
       "platform": null,
       "description": "AI-powered presentation generator that turns simple text, documents, or prompts into slide decks. Micro-SaaS with $24,000 in Annual Revenue. Built with TypeScript, Node.js, JavaScript, Supabase, CSS, OpenAI, React, HTML.",
       "is_pet_wellness": false,
-      "created_at": "2026-04-09T16:34:57.245177"
+      "created_at": "2026-04-09T16:43:37.146404"
     },
     {
       "source": "microns",
@@ -1127,7 +1127,7 @@
       "platform": null,
       "description": "Personalized recommendations to improve the conversion rate of your landing page. Web App with $1,000 in Annual Revenue. Built with Bubble, Firebase, OpenAI, Amazon Web Services, Google Cloud, Stripe.",
       "is_pet_wellness": false,
-      "created_at": "2026-04-09T16:34:55.679752"
+      "created_at": "2026-04-09T16:43:35.559414"
     },
     {
       "source": "microns",
@@ -1142,7 +1142,7 @@
       "platform": null,
       "description": "AI-powered voice recorder that turns rambling thoughts into structured notes. Mobile App with $480 in Annual Revenue. Built with React Native, Flask, PostgreSQL, Python, React.",
       "is_pet_wellness": false,
-      "created_at": "2026-04-09T16:34:54.153346"
+      "created_at": "2026-04-09T16:43:33.924961"
     },
     {
       "source": "microns",
@@ -1157,7 +1157,7 @@
       "platform": null,
       "description": "AI-based voice therapist that listens, adapts, and supports. Web App with $12,000 in Annual Revenue. Built with Stripe, Supabase, React, ChatGPT.",
       "is_pet_wellness": false,
-      "created_at": "2026-04-09T16:34:52.601135"
+      "created_at": "2026-04-09T16:43:32.359454"
     },
     {
       "source": "microns",
@@ -1172,7 +1172,7 @@
       "platform": null,
       "description": "Visualize concepts in seconds without design skills. Web App with $950 in Annual Revenue. Built with Bubble and Open AI API.",
       "is_pet_wellness": false,
-      "created_at": "2026-04-09T16:34:51.077446"
+      "created_at": "2026-04-09T16:43:30.791820"
     },
     {
       "source": "microns",
@@ -1187,7 +1187,7 @@
       "platform": null,
       "description": "AI-powered tool designed to help parents find the perfect name for their baby. Mobile App with $900 in Annual Revenue. Built with OpenAI, Flutter, Firebase, Google Firestore.",
       "is_pet_wellness": false,
-      "created_at": "2026-04-09T16:34:49.510303"
+      "created_at": "2026-04-09T16:43:29.242550"
     },
     {
       "source": "microns",
@@ -1202,7 +1202,7 @@
       "platform": null,
       "description": "ChatGPT powered customer support chatbot. Micro-SaaS with $120 in Annual Revenue. Built with Next.js, Node.js and PostgreSQL.",
       "is_pet_wellness": false,
-      "created_at": "2026-04-09T16:34:47.956435"
+      "created_at": "2026-04-09T16:43:27.689176"
     },
     {
       "source": "microns",
@@ -1217,7 +1217,7 @@
       "platform": null,
       "description": "Summarize and chat with any file or website. Micro-SaaS with $899 in Annual Revenue. Built with TailwindCSS, Next.js, OpenAI, Vercel, Pinecone.",
       "is_pet_wellness": false,
-      "created_at": "2026-04-09T16:34:46.432227"
+      "created_at": "2026-04-09T16:43:26.140314"
     },
     {
       "source": "microns",
@@ -1232,7 +1232,7 @@
       "platform": null,
       "description": "Tool that uses AI to help users study for or cheat on exams. Micro-SaaS with $42,000 in Annual Revenue. Built with TypeScript, SvelteKit, Supabase.",
       "is_pet_wellness": false,
-      "created_at": "2026-04-09T16:34:44.872177"
+      "created_at": "2026-04-09T16:43:24.594615"
     },
     {
       "source": "microns",
@@ -1247,7 +1247,7 @@
       "platform": null,
       "description": "AI platform for creating viral social media and chat mockups in seconds. Web App with $171 in Annual Revenue. Built with Next.js, Vercel, Firebase.",
       "is_pet_wellness": false,
-      "created_at": "2026-04-09T16:34:43.303810"
+      "created_at": "2026-04-09T16:43:23.038667"
     },
     {
       "source": "microns",
@@ -1262,7 +1262,7 @@
       "platform": null,
       "description": "AI-powered SEO tool that generates complete topical maps in minutes. Micro-SaaS with $25,000 in Annual Revenue. Built with Stripe, Node.js, Zapier, Cloudflare, SvelteKit, Google Analytics, Amazon S3, Convertkit, Firebase, Render.",
       "is_pet_wellness": false,
-      "created_at": "2026-04-09T16:34:41.760025"
+      "created_at": "2026-04-09T16:43:21.477504"
     },
     {
       "source": "microns",
@@ -1277,7 +1277,7 @@
       "platform": null,
       "description": "AI-powered SEO platform for EEAT optimization, query fan-out, and content gap analysis. Micro-SaaS with $2,770 in Annual Revenue. Built with Stripe, Next.js.",
       "is_pet_wellness": false,
-      "created_at": "2026-04-09T16:34:40.230062"
+      "created_at": "2026-04-09T16:43:19.928766"
     },
     {
       "source": "microns",
@@ -1292,7 +1292,7 @@
       "platform": null,
       "description": "Create stable diffusion based art prints. E-commerce with $0 in Annual Revenue. Built with AWS CDK, Python and Shopify Liquid.",
       "is_pet_wellness": false,
-      "created_at": "2026-04-09T16:34:38.667305"
+      "created_at": "2026-04-09T16:43:18.363306"
     },
     {
       "source": "microns",
@@ -1307,7 +1307,7 @@
       "platform": null,
       "description": "One-click AI creation tool for presentations and landing pages. Micro-SaaS with $1,500 in Annual Revenue. Built with .NET, PostgreSQL, Azure.",
       "is_pet_wellness": false,
-      "created_at": "2026-04-09T16:34:37.112351"
+      "created_at": "2026-04-09T16:43:16.819113"
     },
     {
       "source": "microns",
@@ -1322,7 +1322,7 @@
       "platform": null,
       "description": "A platform powered by AI for effortlessly creating professional podcasts in minutes. Web App with $700 in Annual Revenue. Built with Next.js, Supabase, Python.",
       "is_pet_wellness": false,
-      "created_at": "2026-04-09T16:34:35.550838"
+      "created_at": "2026-04-09T16:43:15.279573"
     },
     {
       "source": "microns",
@@ -1337,7 +1337,7 @@
       "platform": null,
       "description": "Platform to instantly generate complex VBA code using simple text instructions with the help of AI. Micro-SaaS with $300 in Annual Revenue. Built with Express.js, Node.js, Next.js, OpenAI, MongoDB, Lemon Squeezy.",
       "is_pet_wellness": false,
-      "created_at": "2026-04-09T16:34:34.013388"
+      "created_at": "2026-04-09T16:43:13.729135"
     },
     {
       "source": "microns",
@@ -1352,7 +1352,7 @@
       "platform": null,
       "description": "Cooking app that generates tailored recipes and meal plans. Micro-SaaS with $15,000 in Annual Revenue. Built with React Native, Next.js, Azure, Google Firestore.",
       "is_pet_wellness": false,
-      "created_at": "2026-04-09T16:34:32.509637"
+      "created_at": "2026-04-09T16:43:12.189027"
     },
     {
       "source": "microns",
@@ -1367,7 +1367,7 @@
       "platform": null,
       "description": "AI-powered platform that enables users to generate detailed summaries of PDFs and YouTube videos. Web App with $33 in Annual Revenue. Built with Stripe, AWS, Cloudflare, Next.js, OpenAI, Vercel, Clerk, Pinecone.",
       "is_pet_wellness": false,
-      "created_at": "2026-04-09T16:34:30.958787"
+      "created_at": "2026-04-09T16:43:10.644924"
     },
     {
       "source": "microns",
@@ -1382,7 +1382,7 @@
       "platform": null,
       "description": "Native iOS app that transcribes voice recordings to text instantly, generates AI summaries, and extracts action items. Mobile App with $258 in Annual Revenue. Built with SwiftUI, Gemini API.",
       "is_pet_wellness": false,
-      "created_at": "2026-04-09T16:34:29.403737"
+      "created_at": "2026-04-09T16:43:09.084599"
     },
     {
       "source": "microns",
@@ -1397,7 +1397,7 @@
       "platform": null,
       "description": "Generative AI music platform for focus and mental health. Micro-SaaS with $200 in Annual Revenue. Built with Memberstack, JavaScript, CSS, HTML.",
       "is_pet_wellness": false,
-      "created_at": "2026-04-09T16:34:27.845861"
+      "created_at": "2026-04-09T16:43:07.542614"
     },
     {
       "source": "microns",
@@ -1412,7 +1412,7 @@
       "platform": null,
       "description": "Mobile app with possibility to learn 10 foreign languages using AI. Mobile App with $1,000 in Annual Revenue. Built with OpenAI, Flutter, RevenueCat, Firebase.",
       "is_pet_wellness": false,
-      "created_at": "2026-04-09T16:34:26.284411"
+      "created_at": "2026-04-09T16:43:05.975943"
     },
     {
       "source": "microns",
@@ -1427,7 +1427,7 @@
       "platform": null,
       "description": "Platform for creating and scheduling LinkedIn posts to grow the audience. Micro-SaaS with $800 in Annual Revenue. Built with Node.js, Next.js, Supabase, OpenAI, React, Vercel.",
       "is_pet_wellness": false,
-      "created_at": "2026-04-09T16:34:24.728619"
+      "created_at": "2026-04-09T16:43:04.411251"
     },
     {
       "source": "microns",
@@ -1442,7 +1442,7 @@
       "platform": null,
       "description": "AI-powered illustration generator for custom, consistent illustration packs in seconds. Web App with $2,793 in Annual Revenue. Built with Stripe, Cloudflare, Next.js, Supabase, Vercel, Gemini API.",
       "is_pet_wellness": false,
-      "created_at": "2026-04-09T16:34:23.198577"
+      "created_at": "2026-04-09T16:43:02.859103"
     },
     {
       "source": "microns",
@@ -1457,7 +1457,7 @@
       "platform": null,
       "description": "Platform to build, launch, and scale white-label fundraising solutions on proven infrastructure. Micro-SaaS with $45,000 in Annual Revenue. Built with Docker, JavaScript, Brevo, PostgreSQL, Python, JQuery, Nginx.",
       "is_pet_wellness": false,
-      "created_at": "2026-04-09T16:34:21.639513"
+      "created_at": "2026-04-09T16:43:01.291908"
     },
     {
       "source": "microns",
@@ -1472,7 +1472,7 @@
       "platform": null,
       "description": "AI-powered fitness platform with hysique rating, fitness tools, and fitness atricles. Web App with $240 in Annual Revenue. Built with Node.js, JavaScript, CSS, OpenAI, Firebase, HTML.",
       "is_pet_wellness": false,
-      "created_at": "2026-04-09T16:34:20.109986"
+      "created_at": "2026-04-09T16:42:59.747645"
     },
     {
       "source": "microns",
@@ -1487,7 +1487,7 @@
       "platform": null,
       "description": "iOS app that generates openers and replies for dating apps using AI. Mobile App with $16,080 in Annual Revenue. Built with Swift, SwiftUI, Python, Gemini API.",
       "is_pet_wellness": false,
-      "created_at": "2026-04-09T16:34:18.543122"
+      "created_at": "2026-04-09T16:42:58.200328"
     },
     {
       "source": "microns",
@@ -1502,7 +1502,7 @@
       "platform": null,
       "description": "Platform that automatically analyzes customer feedback, detecting sentiment patterns and key insights. Web App with $6,400 in Annual Revenue. Built with Supabase, OpenAI, React, Vercel, Resend, C#.",
       "is_pet_wellness": false,
-      "created_at": "2026-04-09T16:34:17.012958"
+      "created_at": "2026-04-09T16:42:56.683293"
     },
     {
       "source": "microns",
@@ -1517,7 +1517,7 @@
       "platform": null,
       "description": "No-code, AI-powered tool designed to help SEO professionals and content teams build custom content workflows. Micro-SaaS with $33,000 in Annual Revenue. Built with Angular, Firebase, Framer.",
       "is_pet_wellness": false,
-      "created_at": "2026-04-09T16:34:15.454694"
+      "created_at": "2026-04-09T16:42:55.112731"
     },
     {
       "source": "microns",
@@ -1532,7 +1532,7 @@
       "platform": null,
       "description": "AI-driven SaaS platform for social media content generation. Micro-SaaS with $185 in Annual Revenue. Built with PHP, Laravel, JQuery.",
       "is_pet_wellness": false,
-      "created_at": "2026-04-09T16:34:13.897844"
+      "created_at": "2026-04-09T16:42:53.571238"
     },
     {
       "source": "microns",
@@ -1547,7 +1547,7 @@
       "platform": null,
       "description": "All-in-one AI operating system designed for teams, creators, and agencies. Micro-SaaS with $87,470 in Annual Revenue. Built with Laravel, Python, MySQL.",
       "is_pet_wellness": false,
-      "created_at": "2026-04-09T16:34:12.341732"
+      "created_at": "2026-04-09T16:42:52.017256"
     },
     {
       "source": "microns",
@@ -1562,7 +1562,7 @@
       "platform": null,
       "description": "Send personalized cold DMs for outreach. Micro-SaaS with $0 in Annual Revenue. Built with React, NodeJS and GPT3.",
       "is_pet_wellness": false,
-      "created_at": "2026-04-09T16:34:10.781329"
+      "created_at": "2026-04-09T16:42:50.445567"
     },
     {
       "source": "microns",
@@ -1577,7 +1577,7 @@
       "platform": null,
       "description": "AI-powered iOS app that tracks calories from photos, ready to scale. Mobile App with $1,051 in Annual Revenue. Built with Swift, RevenueCat, ChatGPT, Firebase.",
       "is_pet_wellness": false,
-      "created_at": "2026-04-09T16:34:09.261650"
+      "created_at": "2026-04-09T16:42:48.892113"
     },
     {
       "source": "microns",
@@ -1592,7 +1592,7 @@
       "platform": null,
       "description": "The app that automates browser tasks with text prompts. Web App with $5,500 in Annual Revenue. Built with Stripe, Docker, JavaScript, OpenAI, Python, HTML.",
       "is_pet_wellness": false,
-      "created_at": "2026-04-09T16:34:07.733154"
+      "created_at": "2026-04-09T16:42:47.347471"
     },
     {
       "source": "microns",
@@ -1607,7 +1607,7 @@
       "platform": null,
       "description": "AI-powered Kindle alternative for reading and discussing PDFs, EPUBs, and DOCs in the browser. Web App with $300 in Annual Revenue. Built with Node.js, AWS, React, Firebase.",
       "is_pet_wellness": false,
-      "created_at": "2026-04-09T16:34:06.181222"
+      "created_at": "2026-04-09T16:42:45.788737"
     },
     {
       "source": "microns",
@@ -1622,7 +1622,7 @@
       "platform": null,
       "description": "Book generation service that creates a complete book ranging from 10,000 to 150,000 words in a single request. Web App with $356 in Annual Revenue. Built with AWS, Amazon S3, Vercel, ChatGPT.",
       "is_pet_wellness": false,
-      "created_at": "2026-04-09T16:34:04.632518"
+      "created_at": "2026-04-09T16:42:44.247895"
     },
     {
       "source": "microns",
@@ -1637,7 +1637,7 @@
       "platform": null,
       "description": "AI anime image and video generator for anime enthusiasts. Micro-SaaS with $2,204 in Annual Revenue. Built with Digital Ocean, Next.js, PostgreSQL.",
       "is_pet_wellness": false,
-      "created_at": "2026-04-09T16:34:03.109842"
+      "created_at": "2026-04-09T16:42:42.699074"
     },
     {
       "source": "microns",
@@ -1652,7 +1652,7 @@
       "platform": null,
       "description": "AI-powered tool that turns text prompts or photos into animated characters with transparent backgrounds. Micro-SaaS with $417 in Annual Revenue. Built with Node.js, Google Cloud Storage, TailwindCSS, Python, Google Cloud Platform.",
       "is_pet_wellness": false,
-      "created_at": "2026-04-09T16:34:01.553443"
+      "created_at": "2026-04-09T16:42:41.155683"
     },
     {
       "source": "microns",
@@ -1667,7 +1667,7 @@
       "platform": null,
       "description": "COPPA-compliant generative platform that empowers children to transform their imagination into published Amazon books. Micro-SaaS with $1,149 in Annual Revenue. Built with Node.js, OpenAI, Python, Amazon S3, Gemini API.",
       "is_pet_wellness": false,
-      "created_at": "2026-04-09T16:33:59.987373"
+      "created_at": "2026-04-09T16:42:39.597693"
     },
     {
       "source": "microns",
@@ -1682,7 +1682,7 @@
       "platform": null,
       "description": "AI-powered photo editing app for iOS. Mobile App with $3,670 in Annual Revenue. Built with Swift, SwiftUI, Supabase, RevenueCat.",
       "is_pet_wellness": false,
-      "created_at": "2026-04-09T16:33:58.436099"
+      "created_at": "2026-04-09T16:42:38.044640"
     },
     {
       "source": "microns",
@@ -1697,7 +1697,7 @@
       "platform": null,
       "description": "YouTube channel that posts AI videos of animals being rescued. YouTube with $17,954 in Annual Revenue. Built with YouTube, ChatGPT.",
       "is_pet_wellness": true,
-      "created_at": "2026-04-09T16:33:56.885361"
+      "created_at": "2026-04-09T16:42:36.496315"
     },
     {
       "source": "microns",
@@ -1712,7 +1712,7 @@
       "platform": null,
       "description": "Meticulously curated articles on AI/ML, Web3, and marketing. Newsletter with $324 in Annual Revenue. Built with Beehiiv.",
       "is_pet_wellness": false,
-      "created_at": "2026-04-09T16:33:55.357034"
+      "created_at": "2026-04-09T16:42:34.942810"
     },
     {
       "source": "microns",
@@ -1727,7 +1727,7 @@
       "platform": null,
       "description": "AI-powered meeting assistant that automatically generates customized reports from phone calls and video conferences. Micro-SaaS with $33,000 in Annual Revenue. Built with AWS, Replicate, GitHub, Django, Twilio, OpenAI, React, Vercel, Heroku.",
       "is_pet_wellness": false,
-      "created_at": "2026-04-09T16:33:53.820083"
+      "created_at": "2026-04-09T16:42:33.383542"
     },
     {
       "source": "microns",
@@ -1742,7 +1742,7 @@
       "platform": null,
       "description": "Native iOS app that lets students snap a photo of any math problem and get instant AI step-by-step solutions. Mobile App with $159 in Annual Revenue. Built with SwiftUI, RevenueCat, Firebase, Gemini API.",
       "is_pet_wellness": false,
-      "created_at": "2026-04-09T16:33:52.259886"
+      "created_at": "2026-04-09T16:42:31.819104"
     },
     {
       "source": "microns",
@@ -1757,7 +1757,7 @@
       "platform": null,
       "description": "Profitable AI-powered marketing assistant for Etsy that helps boost sales. Browser Extension with $450 in Annual Revenue. Built with Stripe, Digital Ocean, JavaScript, Google OAuth, Google Analytics, CSS, MySQL, ChatGPT, HTML.",
       "is_pet_wellness": false,
-      "created_at": "2026-04-09T16:33:50.758772"
+      "created_at": "2026-04-09T16:42:30.260490"
     },
     {
       "source": "microns",
@@ -1772,7 +1772,7 @@
       "platform": null,
       "description": "AI agent to conduct interviews to surface top candidates in your hiring pipeline. Micro-SaaS with $28,000 in Annual Revenue. Built with AWS, PHP, OpenAI, Python, MySQL.",
       "is_pet_wellness": false,
-      "created_at": "2026-04-09T16:33:49.182389"
+      "created_at": "2026-04-09T16:42:28.709954"
     },
     {
       "source": "microns",
@@ -1787,7 +1787,7 @@
       "platform": null,
       "description": "A platform that allows users to create AI influencers in minutes. Web App with $2,285 in Annual Revenue. Built with Node.js, Cloudflare, Posthog, Next.js, PostgreSQL, React, Resend, Redis.",
       "is_pet_wellness": false,
-      "created_at": "2026-04-09T16:33:47.630697"
+      "created_at": "2026-04-09T16:42:27.156287"
     },
     {
       "source": "microns",
@@ -1802,7 +1802,7 @@
       "platform": null,
       "description": "AI-powered platform generating image description. Web App with $131 in Annual Revenue. Built with JavaScript, PHP, CSS, HTML.",
       "is_pet_wellness": false,
-      "created_at": "2026-04-09T16:33:46.107317"
+      "created_at": "2026-04-09T16:42:25.603973"
     },
     {
       "source": "microns",
@@ -1817,7 +1817,7 @@
       "platform": null,
       "description": "SaaS tool to create AI influencers in seconds. Micro-SaaS with $900 in Annual Revenue. Built with Stripe, Replicate, GitHub, Cloudinary, Cloudflare, TailwindCSS, Supabase, Nuxt, Microsoft Clarity.",
       "is_pet_wellness": false,
-      "created_at": "2026-04-09T16:33:44.562143"
+      "created_at": "2026-04-09T16:42:24.037498"
     },
     {
       "source": "microns",
@@ -1832,7 +1832,7 @@
       "platform": null,
       "description": "Create AI generated portraits with background themes. Web App with $530 in Annual Revenue. Built with Flask and Bootstrap.",
       "is_pet_wellness": false,
-      "created_at": "2026-04-09T16:33:43.011952"
+      "created_at": "2026-04-09T16:42:22.491922"
     },
     {
       "source": "microns",
@@ -1847,7 +1847,7 @@
       "platform": null,
       "description": "Easily create workout and meal plans. Web App with $3,150 in Annual Revenue. Built with Next.js, Supabase and TailwindCSS.",
       "is_pet_wellness": false,
-      "created_at": "2026-04-09T16:33:41.457901"
+      "created_at": "2026-04-09T16:42:20.944806"
     },
     {
       "source": "microns",
@@ -1862,7 +1862,7 @@
       "platform": null,
       "description": "Text-to-audio converter in over 140 languages and 300+ voices. Micro-SaaS with $20,000 in Annual Revenue. Built with JavaScript, PHP, Amazon, CSS, HTML, Azure.",
       "is_pet_wellness": false,
-      "created_at": "2026-04-09T16:33:39.929913"
+      "created_at": "2026-04-09T16:42:19.396323"
     },
     {
       "source": "microns",
@@ -1877,7 +1877,7 @@
       "platform": null,
       "description": "AI-powered iOS app that detects plagiarism and humanizes AI-generated text instantly. Mobile App with $3,700 in Annual Revenue. Built with SwiftUI, Gemini API.",
       "is_pet_wellness": false,
-      "created_at": "2026-04-09T16:33:38.379424"
+      "created_at": "2026-04-09T16:42:17.833854"
     },
     {
       "source": "microns",
@@ -1892,7 +1892,7 @@
       "platform": null,
       "description": "Detect AI, humanize text, check plagiarism & readability. Mobile App with $38,300 in Annual Revenue. Built with Swift, Kotlin, Carrd, RevenueCat, Firebase.",
       "is_pet_wellness": false,
-      "created_at": "2026-04-09T16:33:36.827514"
+      "created_at": "2026-04-09T16:42:16.308702"
     },
     {
       "source": "microns",
@@ -1907,7 +1907,7 @@
       "platform": null,
       "description": "Al dating assistant for better chats, smarter replies, and confident pickup lines. Mobile App with $3,600 in Annual Revenue. Built with Notion, Expo, React Native, OpenAI.",
       "is_pet_wellness": false,
-      "created_at": "2026-04-09T16:33:35.277353"
+      "created_at": "2026-04-09T16:42:14.736480"
     },
     {
       "source": "microns",
@@ -1922,7 +1922,7 @@
       "platform": null,
       "description": "Increase your page conversions with AI. Web App with $0 in Annual Revenue. Built with Laravel, Bootstrap, and GPT3.5.",
       "is_pet_wellness": false,
-      "created_at": "2026-04-09T16:33:33.711619"
+      "created_at": "2026-04-09T16:42:13.179252"
     },
     {
       "source": "microns",
@@ -1937,7 +1937,7 @@
       "platform": null,
       "description": "Self-serve AI compliance toolkit that helps businesses generate ready-to-edit compliance documentation faster. Web App with $370 in Annual Revenue. Built with Stripe, HTML, Netlify.",
       "is_pet_wellness": false,
-      "created_at": "2026-04-09T16:33:32.185412"
+      "created_at": "2026-04-09T16:42:11.620659"
     },
     {
       "source": "microns",
@@ -1952,7 +1952,7 @@
       "platform": null,
       "description": "AI companion platform for creating, chatting, and sharing images with a personalized AI companion. Web App with $495 in Annual Revenue. Built with TypeScript, Node.js, AWS, GitHub, Stable Diffusion, Google Analytics, React, Amazon S3, Angular, ChatGPT.",
       "is_pet_wellness": false,
-      "created_at": "2026-04-09T16:33:30.655335"
+      "created_at": "2026-04-09T16:42:10.052311"
     },
     {
       "source": "microns",
@@ -1967,7 +1967,7 @@
       "platform": null,
       "description": "No-code AI chatbot platform that helps SMBs automate WhatsApp and Telegram customer support 24/7. Micro-SaaS with $525 in Annual Revenue. Built with OpenAI, React.",
       "is_pet_wellness": false,
-      "created_at": "2026-04-09T16:33:29.055029"
+      "created_at": "2026-04-09T16:42:08.503792"
     },
     {
       "source": "microns",
@@ -1982,7 +1982,7 @@
       "platform": null,
       "description": "Platform assisting in extracting knowledge within information from various types of data. Micro-SaaS with $2,400 in Annual Revenue. Built with AWS, MERN, Pinecone.",
       "is_pet_wellness": false,
-      "created_at": "2026-04-09T16:33:27.519894"
+      "created_at": "2026-04-09T16:42:06.951073"
     },
     {
       "source": "microns",
@@ -1997,7 +1997,7 @@
       "platform": null,
       "description": "Let AI summarize long documents and find key information in seconds. Micro-SaaS with $4 in Annual Revenue. Built with AWS, Prisma, TailwindCSS, Next.js, Supabase, OpenAI, Vercel.",
       "is_pet_wellness": false,
-      "created_at": "2026-04-09T16:33:25.953250"
+      "created_at": "2026-04-09T16:42:05.383718"
     },
     {
       "source": "microns",
@@ -2012,7 +2012,7 @@
       "platform": null,
       "description": "AI-powered calorie and macro tracking apps for iOS and Android. Mobile App with $14,600 in Annual Revenue. Built with TypeScript, Expo, React Native, Supabase, OpenAI.",
       "is_pet_wellness": false,
-      "created_at": "2026-04-09T16:33:24.398731"
+      "created_at": "2026-04-09T16:42:03.841453"
     },
     {
       "source": "microns",
@@ -2027,7 +2027,7 @@
       "platform": null,
       "description": "Data extraction tool that converts PDF bank statements into CSV, Excel, QBO, and JSON. Micro-SaaS with $761 in Annual Revenue. Built with Node.js, PostgreSQL, Angular.",
       "is_pet_wellness": false,
-      "created_at": "2026-04-09T16:33:22.836523"
+      "created_at": "2026-04-09T16:42:02.279450"
     },
     {
       "source": "microns",
@@ -2042,7 +2042,7 @@
       "platform": null,
       "description": "AI photo generator and maker. Web App with $780 in Annual Revenue. Built with TypeScript, Stable Diffusion, Next.js, Azure, Microsoft Clarity.",
       "is_pet_wellness": false,
-      "created_at": "2026-04-09T16:33:21.280248"
+      "created_at": "2026-04-09T16:42:00.722318"
     },
     {
       "source": "microns",
@@ -2057,7 +2057,7 @@
       "platform": null,
       "description": "Photorealistic visualization for architects and designers. Micro-SaaS with $575 in Annual Revenue. Built with React, Nodejs, Supabase.",
       "is_pet_wellness": false,
-      "created_at": "2026-04-09T16:33:19.748444"
+      "created_at": "2026-04-09T16:41:59.167099"
     },
     {
       "source": "microns",
@@ -2072,7 +2072,7 @@
       "platform": null,
       "description": "One-click assistant to generate contextual analogies for your content. Micro-SaaS with $200 in Annual Revenue. Built with Next.js, SupaBase, OpenAI API.",
       "is_pet_wellness": false,
-      "created_at": "2026-04-09T16:33:18.185891"
+      "created_at": "2026-04-09T16:41:57.625111"
     },
     {
       "source": "microns",
@@ -2087,7 +2087,7 @@
       "platform": null,
       "description": "Marketplace for hiring AI agents. Marketplace with $147 in Annual Revenue. Built with Django, Bootstrap, CSS, Python.",
       "is_pet_wellness": false,
-      "created_at": "2026-04-09T16:33:16.624341"
+      "created_at": "2026-04-09T16:41:56.061937"
     },
     {
       "source": "microns",
@@ -2102,7 +2102,7 @@
       "platform": null,
       "description": "E-commerce store solution for entrepreneurs seeking a turnkey business model. Agency with $35,000 in Annual Revenue. Built with Shopify.",
       "is_pet_wellness": false,
-      "created_at": "2026-04-09T16:33:15.067832"
+      "created_at": "2026-04-09T16:41:54.508927"
     },
     {
       "source": "microns",
@@ -2117,7 +2117,7 @@
       "platform": null,
       "description": "Agency that helps founders raise non-dilutive financing from government programs in Malta. Agency with $22,000 in Annual Revenue. Built with Notion, Google Sheets.",
       "is_pet_wellness": false,
-      "created_at": "2026-04-09T16:33:13.512234"
+      "created_at": "2026-04-09T16:41:52.953786"
     },
     {
       "source": "microns",
@@ -2132,7 +2132,7 @@
       "platform": null,
       "description": "Directory designed to help marketers discover affiliate programs. Directory with $996 in Annual Revenue. Built with Stripe, Cloudflare, Next.js, Supabase, Vercel.",
       "is_pet_wellness": false,
-      "created_at": "2026-04-09T16:33:11.946080"
+      "created_at": "2026-04-09T16:41:51.397823"
     },
     {
       "source": "microns",
@@ -2147,7 +2147,7 @@
       "platform": null,
       "description": "Find affiliate programs in your niche. Directory with $180 in Annual Revenue. Built with MERN.",
       "is_pet_wellness": false,
-      "created_at": "2026-04-09T16:33:10.389120"
+      "created_at": "2026-04-09T16:41:49.818411"
     },
     {
       "source": "microns",
@@ -2162,7 +2162,7 @@
       "platform": null,
       "description": "Database of high paying affiliate programs. Database with $225 in Annual Revenue. Built with Airtable, Gumroad.",
       "is_pet_wellness": false,
-      "created_at": "2026-04-09T16:33:08.860101"
+      "created_at": "2026-04-09T16:41:48.238881"
     },
     {
       "source": "microns",
@@ -2177,7 +2177,7 @@
       "platform": null,
       "description": "Platform helping brands protect their revenue by identifying affiliates who steal organic traffic through unauthorized branded ads. Micro-SaaS with $12,000 in Annual Revenue. Built with Ghost, Python, MySQL.",
       "is_pet_wellness": false,
-      "created_at": "2026-04-09T16:33:07.301388"
+      "created_at": "2026-04-09T16:41:46.684989"
     },
     {
       "source": "microns",
@@ -2192,7 +2192,7 @@
       "platform": null,
       "description": "Find high paying startup affiliate programs. Directory with $700 in Annual Revenue. Built with Webflow and Airtable.",
       "is_pet_wellness": false,
-      "created_at": "2026-04-09T16:33:05.750513"
+      "created_at": "2026-04-09T16:41:45.131540"
     },
     {
       "source": "microns",
@@ -2207,7 +2207,7 @@
       "platform": null,
       "description": "Data driven research solution for affiliate marketers. Database with $17,249 in Annual Revenue. Built with Next.js, React, Google Firestore.",
       "is_pet_wellness": false,
-      "created_at": "2026-04-09T16:33:04.185366"
+      "created_at": "2026-04-09T16:41:43.562934"
     },
     {
       "source": "microns",
@@ -2222,7 +2222,7 @@
       "platform": null,
       "description": "Adaptive fitness SaaS that generates personalised workout programs, nutrition plans, and progress tracking. Micro-SaaS with $12,087 in Annual Revenue. Built with Stripe, Node.js, JavaScript, Brevo, Vercel, MongoDB, Render.",
       "is_pet_wellness": false,
-      "created_at": "2026-04-09T16:33:02.659189"
+      "created_at": "2026-04-09T16:41:42.013189"
     },
     {
       "source": "microns",
@@ -2237,7 +2237,7 @@
       "platform": null,
       "description": "Academic assistant writing essays and cite papers. Micro-SaaS with $480 in Annual Revenue. Built with GitHub, Next.js, Vercel.",
       "is_pet_wellness": false,
-      "created_at": "2026-04-09T16:33:01.122288"
+      "created_at": "2026-04-09T16:41:40.464600"
     },
     {
       "source": "microns",
@@ -2252,7 +2252,757 @@
       "platform": null,
       "description": "SaaS application for construction management, to visualize project progress and predict issues in 3D, which helps to save 20% of time and cost. Micro-SaaS with $48,600 in Annual Revenue. Built with Node.js, AWS, Azure.",
       "is_pet_wellness": false,
-      "created_at": "2026-04-09T16:32:59.547663"
+      "created_at": "2026-04-09T16:41:38.881898"
+    },
+    {
+      "source": "empire_flippers",
+      "source_id": "54094",
+      "title": "EF #54094",
+      "url": "https://empireflippers.com/listing/54094",
+      "asking_price": 3201828.0,
+      "mrr": null,
+      "annual_profit": null,
+      "multiple": null,
+      "monetization_type": null,
+      "platform": null,
+      "description": "This listing is for an Amazon FBA and FBM business created in February 2014 in the equipment and electronics niches. The included Amazon Seller Central account features 15 SKUs (12 active and 3 inactive) for products related to the outdoors and electronic equipment. The business features a trademark",
+      "is_pet_wellness": false,
+      "created_at": "2026-04-09T16:41:32.742851"
+    },
+    {
+      "source": "empire_flippers",
+      "source_id": "53822",
+      "title": "EF #53822",
+      "url": "https://empireflippers.com/listing/53822",
+      "asking_price": 3527633.0,
+      "mrr": null,
+      "annual_profit": null,
+      "multiple": null,
+      "monetization_type": null,
+      "platform": null,
+      "description": "This listing is for an Amazon FBA business created in July 2018 in the home and Pet Care niche. Included with the Amazon Seller Central account are 3 products that help protect furniture. The trademarked business is part of Amazon Brand Registry 2.0 and sells on the US and CA marketplaces. The most ",
+      "is_pet_wellness": true,
+      "created_at": "2026-04-09T16:41:32.742793"
+    },
+    {
+      "source": "empire_flippers",
+      "source_id": "46644",
+      "title": "EF #46644",
+      "url": "https://empireflippers.com/listing/46644",
+      "asking_price": 3594539.0,
+      "mrr": null,
+      "annual_profit": null,
+      "multiple": null,
+      "monetization_type": null,
+      "platform": null,
+      "description": "This listing is for an Amazon FBA business created in January 2016 in the health & fitness niche. The included Amazon storefront holds multi-use fitness products that can be used at home. Earnings have grown considerably in 2020 with profits reaching all-time highs. The business has an established t",
+      "is_pet_wellness": false,
+      "created_at": "2026-04-09T16:41:32.742725"
+    },
+    {
+      "source": "empire_flippers",
+      "source_id": "85679",
+      "title": "EF #85679",
+      "url": "https://empireflippers.com/listing/85679",
+      "asking_price": 3712475.0,
+      "mrr": null,
+      "annual_profit": null,
+      "multiple": null,
+      "monetization_type": null,
+      "platform": null,
+      "description": "This listing features an Amazon FBA and eCommerce brand established in June 2021, operating in the survival, security, and outdoor niches. The brand offers a range of specialized gear for emergency and tactical situations, including personal filtration tools, tactical lighting, and communication dev",
+      "is_pet_wellness": false,
+      "created_at": "2026-04-09T16:41:32.742665"
+    },
+    {
+      "source": "empire_flippers",
+      "source_id": "48871",
+      "title": "EF #48871",
+      "url": "https://empireflippers.com/listing/48871",
+      "asking_price": 3717630.0,
+      "mrr": null,
+      "annual_profit": null,
+      "multiple": null,
+      "monetization_type": null,
+      "platform": null,
+      "description": "This listing is for an Amazon FBA business created in December 2015 in the health and beauty niches. The included Amazon Seller Central Account features 14 SKUs for grooming and beauty-related products. The trademarked brand has great reviews with several products receiving an average of 4.5 stars o",
+      "is_pet_wellness": true,
+      "created_at": "2026-04-09T16:41:32.742609"
+    },
+    {
+      "source": "empire_flippers",
+      "source_id": "87832",
+      "title": "EF #87832",
+      "url": "https://empireflippers.com/listing/87832",
+      "asking_price": 4000000.0,
+      "mrr": null,
+      "annual_profit": null,
+      "multiple": null,
+      "monetization_type": null,
+      "platform": null,
+      "description": "This listing is for an Amazon FBA business established in June 2021, specializing in bedding accessories and operated by experienced e-commerce professionals. Since launch, the brand has quickly emerged as one of the leading players in its niche on Amazon US, achieving strong revenue growth supporte",
+      "is_pet_wellness": false,
+      "created_at": "2026-04-09T16:41:32.742555"
+    },
+    {
+      "source": "empire_flippers",
+      "source_id": "91643",
+      "title": "EF #91643",
+      "url": "https://empireflippers.com/listing/91643",
+      "asking_price": 4093247.0,
+      "mrr": null,
+      "annual_profit": null,
+      "multiple": null,
+      "monetization_type": null,
+      "platform": null,
+      "description": "This business is an Amazon FBA and eCommerce operation launched in 2022, specializing in the Hobbies and Gaming niches. It focuses on offering high-quality accessories for trading card game (TCG) collectibles, with a particular emphasis on protective cases and display solutions. The trademarked and ",
+      "is_pet_wellness": false,
+      "created_at": "2026-04-09T16:41:32.742509"
+    },
+    {
+      "source": "empire_flippers",
+      "source_id": "51641",
+      "title": "EF #51641",
+      "url": "https://empireflippers.com/listing/51641",
+      "asking_price": 4197744.0,
+      "mrr": null,
+      "annual_profit": null,
+      "multiple": null,
+      "monetization_type": null,
+      "platform": null,
+      "description": "This listing is for an Amazon FBA and eCommerce business created in February 2014 in the apparel & accessories and supplements niche. The included Amazon Seller Central account features 30 - 40 products with 1,747 child SKUs of girls, boys, women, plus size clothing, and OTC medications & treatments",
+      "is_pet_wellness": true,
+      "created_at": "2026-04-09T16:41:32.742445"
+    },
+    {
+      "source": "empire_flippers",
+      "source_id": "74647",
+      "title": "EF #74647",
+      "url": "https://empireflippers.com/listing/74647",
+      "asking_price": 4275959.0,
+      "mrr": null,
+      "annual_profit": null,
+      "multiple": null,
+      "monetization_type": null,
+      "platform": null,
+      "description": "This listing presents an eCommerce and Amazon FBA business, established in July 2018, operating in the automotive sector. The business specializes in a select range of easy-to-install, branded replacement parts tailored for certain car cabin features. The products have garnered excellent reviews on ",
+      "is_pet_wellness": false,
+      "created_at": "2026-04-09T16:41:32.742391"
+    },
+    {
+      "source": "empire_flippers",
+      "source_id": "48314",
+      "title": "EF #48314",
+      "url": "https://empireflippers.com/listing/48314",
+      "asking_price": 4317488.0,
+      "mrr": null,
+      "annual_profit": null,
+      "multiple": null,
+      "monetization_type": null,
+      "platform": null,
+      "description": "This listing is for an Amazon FBA and eCommerce business created in April 2014 in the sports niche. The Amazon Seller Central account features 48 SKUs for items related to a popular sub-niche in the fitness industry. This business includes a trademark, Amazon Brand Registry, three additional exact m",
+      "is_pet_wellness": false,
+      "created_at": "2026-04-09T16:41:32.742286"
+    },
+    {
+      "source": "empire_flippers",
+      "source_id": "81736",
+      "title": "EF #81736",
+      "url": "https://empireflippers.com/listing/81736",
+      "asking_price": 4367110.0,
+      "mrr": null,
+      "annual_profit": null,
+      "multiple": null,
+      "monetization_type": null,
+      "platform": null,
+      "description": "This listing is for an affiliate, Amazon Associates, and Display Advertising business consisting of two WordPress websites, established in October 2020. The websites offer comprehensive guides, resources, and reviews focused on test preparation, professional certifications, and language learning pro",
+      "is_pet_wellness": false,
+      "created_at": "2026-04-09T16:41:32.742201"
+    },
+    {
+      "source": "empire_flippers",
+      "source_id": "45715",
+      "title": "EF #45715",
+      "url": "https://empireflippers.com/listing/45715",
+      "asking_price": 4400462.0,
+      "mrr": null,
+      "annual_profit": null,
+      "multiple": null,
+      "monetization_type": null,
+      "platform": null,
+      "description": "This listing is for an Amazon FBA business created in December 2016 in multiple niches. The included Amazon Seller Central account features 22 SKUs, primarily related to sports and home goods. The business sells in the US and all EU markets, with the large majority of revenue coming from the UK. Som",
+      "is_pet_wellness": false,
+      "created_at": "2026-04-09T16:41:32.742089"
+    },
+    {
+      "source": "empire_flippers",
+      "source_id": "49213",
+      "title": "EF #49213",
+      "url": "https://empireflippers.com/listing/49213",
+      "asking_price": 4439704.0,
+      "mrr": null,
+      "annual_profit": null,
+      "multiple": null,
+      "monetization_type": null,
+      "platform": null,
+      "description": "This listing is for an Amazon FBA business created in August 2019 in the children’s and hobbies niches. Included with the Amazon Seller Central account are 8 SKUs for children's events and fun activities. The trademarked business is part of Amazon Brand Registry 2.0 and has shown strong sales perfor",
+      "is_pet_wellness": false,
+      "created_at": "2026-04-09T16:41:32.742004"
+    },
+    {
+      "source": "empire_flippers",
+      "source_id": "51133",
+      "title": "EF #51133",
+      "url": "https://empireflippers.com/listing/51133",
+      "asking_price": 4633471.0,
+      "mrr": null,
+      "annual_profit": null,
+      "multiple": null,
+      "monetization_type": null,
+      "platform": null,
+      "description": "This listing is for a three-brand package of Amazon FBA businesses created in May 2015 in the home, medical, and art niches. The included Seller Central account features 50 SKUs for various products related to consumer medical supplies and home goods. All three brands are trademarked and a part of A",
+      "is_pet_wellness": false,
+      "created_at": "2026-04-09T16:41:32.741935"
+    },
+    {
+      "source": "empire_flippers",
+      "source_id": "83512",
+      "title": "EF #83512",
+      "url": "https://empireflippers.com/listing/83512",
+      "asking_price": 4767877.0,
+      "mrr": null,
+      "annual_profit": null,
+      "multiple": null,
+      "monetization_type": null,
+      "platform": null,
+      "description": "Founded in 2019, this global, fast-growing eCommerce and FBA brand designs and sells innovative connected lifestyle products that help people stay emotionally close across long distances. With a mission to bring joy and connection to separated loved ones, the business has developed a standout produc",
+      "is_pet_wellness": false,
+      "created_at": "2026-04-09T16:41:32.741837"
+    },
+    {
+      "source": "empire_flippers",
+      "source_id": "50980",
+      "title": "EF #50980",
+      "url": "https://empireflippers.com/listing/50980",
+      "asking_price": 4826142.0,
+      "mrr": null,
+      "annual_profit": null,
+      "multiple": null,
+      "monetization_type": null,
+      "platform": null,
+      "description": "This listing is for an Amazon FBA business created in November 2013 in the supplements niche. The included Amazon Seller Central account features 47 SKUs for a variety of health and diet supplements sold under four different brands. The trademarked business is registered with Amazon's Brand Registry",
+      "is_pet_wellness": true,
+      "created_at": "2026-04-09T16:41:32.736848"
+    },
+    {
+      "source": "empire_flippers",
+      "source_id": "51276",
+      "title": "EF #51276",
+      "url": "https://empireflippers.com/listing/51276",
+      "asking_price": 4872381.0,
+      "mrr": null,
+      "annual_profit": null,
+      "multiple": null,
+      "monetization_type": null,
+      "platform": null,
+      "description": "This listing is for an Amazon FBA business created in July 2015 in the home and art niches. The included Amazon Seller Central account features 53 SKUs for products across 5 brands covering the Home, Garden, and Arts & Crafts niches. The business includes several trademarks, is part of Amazon’s Bran",
+      "is_pet_wellness": false,
+      "created_at": "2026-04-09T16:41:32.736717"
+    },
+    {
+      "source": "empire_flippers",
+      "source_id": "49262",
+      "title": "EF #49262",
+      "url": "https://empireflippers.com/listing/49262",
+      "asking_price": 5052567.0,
+      "mrr": null,
+      "annual_profit": null,
+      "multiple": null,
+      "monetization_type": null,
+      "platform": null,
+      "description": "This listing is for an Amazon FBA business created in September 2011 in the automotive niche. The included Amazon Seller Central Accounts features 186 SKUs. The trademarked brand includes Amazon Brand Registry 2.0 and revenue is well-diversified over many SKUs. The well-aged brand has shown good gro",
+      "is_pet_wellness": false,
+      "created_at": "2026-04-09T16:41:32.736663"
+    },
+    {
+      "source": "empire_flippers",
+      "source_id": "88296",
+      "title": "EF #88296",
+      "url": "https://empireflippers.com/listing/88296",
+      "asking_price": 5175652.0,
+      "mrr": 100000.0,
+      "annual_profit": null,
+      "multiple": null,
+      "monetization_type": null,
+      "platform": null,
+      "description": "This health and wellness supplement brand specializes in anti-aging and longevity products and is a trusted name in the niche. The focused product line, alongside fully outsourced fulfilment via a 3PL, allows for easy inventory management. This business has impressive monthly revenue, averaging just",
+      "is_pet_wellness": true,
+      "created_at": "2026-04-09T16:41:32.736612"
+    },
+    {
+      "source": "empire_flippers",
+      "source_id": "84831",
+      "title": "EF #84831",
+      "url": "https://empireflippers.com/listing/84831",
+      "asking_price": 5325596.0,
+      "mrr": null,
+      "annual_profit": null,
+      "multiple": null,
+      "monetization_type": null,
+      "platform": null,
+      "description": "Launched in 2023, this Digital Product and Service business provides turnkey Shopify stores for aspiring eCommerce entrepreneurs. Customers choose from nine niches, and within 24 hours, receive a fully branded store preloaded with 30+ products and a supplier. The business has achieved strong growth,",
+      "is_pet_wellness": false,
+      "created_at": "2026-04-09T16:41:32.736544"
+    },
+    {
+      "source": "empire_flippers",
+      "source_id": "89304",
+      "title": "EF #89304",
+      "url": "https://empireflippers.com/listing/89304",
+      "asking_price": 5475268.0,
+      "mrr": null,
+      "annual_profit": null,
+      "multiple": null,
+      "monetization_type": null,
+      "platform": null,
+      "description": "Launched in 2022, this bootstrapped Conversion Recovery Platform helps eCommerce merchants recover lost shopper intent through native, data-driven on-site experiences without using pop-ups or intrusive ads. By detecting when buying interest fades and re-engaging users in real time, the platform deli",
+      "is_pet_wellness": false,
+      "created_at": "2026-04-09T16:41:32.735468"
+    },
+    {
+      "source": "empire_flippers",
+      "source_id": "52072",
+      "title": "EF #52072",
+      "url": "https://empireflippers.com/listing/52072",
+      "asking_price": 5883077.0,
+      "mrr": null,
+      "annual_profit": null,
+      "multiple": null,
+      "monetization_type": null,
+      "platform": null,
+      "description": "This listing is for an Amazon FBA business created in October 2015 in the hobbies niche. The included Seller Central account features 62 SKUs for craft products related to an indoor hobby. The best-selling SKU has over 4,000 positive reviews and is an Amazon's Choice product. The trademarked busines",
+      "is_pet_wellness": false,
+      "created_at": "2026-04-09T16:41:32.734467"
+    },
+    {
+      "source": "empire_flippers",
+      "source_id": "89855",
+      "title": "EF #89855",
+      "url": "https://empireflippers.com/listing/89855",
+      "asking_price": 5918342.0,
+      "mrr": null,
+      "annual_profit": null,
+      "multiple": null,
+      "monetization_type": null,
+      "platform": null,
+      "description": "This Amazon FBA business was founded in October 2021 and operates in the kitchenware niche with a well-established international footprint across North America and Europe. The brand currently offers 48 SKUs in the U.S. marketplace and an additional 30 SKUs across the UK and EU, providing strong geog",
+      "is_pet_wellness": false,
+      "created_at": "2026-04-09T16:41:32.734411"
+    },
+    {
+      "source": "empire_flippers",
+      "source_id": "84972",
+      "title": "EF #84972",
+      "url": "https://empireflippers.com/listing/84972",
+      "asking_price": 6488682.0,
+      "mrr": null,
+      "annual_profit": null,
+      "multiple": null,
+      "monetization_type": null,
+      "platform": null,
+      "description": "Founded in April 2020, this well-established digital marketing agency specializes in SEO, Google Business Profile optimization, Local Service Ads, and website design — with a proven track record in the home services space. With over 120 active clients, more than 100 of whom are in a single dominant ",
+      "is_pet_wellness": false,
+      "created_at": "2026-04-09T16:41:32.734355"
+    },
+    {
+      "source": "empire_flippers",
+      "source_id": "88767",
+      "title": "EF #88767",
+      "url": "https://empireflippers.com/listing/88767",
+      "asking_price": 6993588.0,
+      "mrr": null,
+      "annual_profit": null,
+      "multiple": null,
+      "monetization_type": null,
+      "platform": null,
+      "description": "This listing presents an established Amazon FBA and e-commerce business operating in the Supplements niche, acquired by the Seller in early 2017. The core asset is an Amazon Brand Registered and U.S. trademarked brand that offers a large variety of botanical and phytochemical extracts in capsule for",
+      "is_pet_wellness": true,
+      "created_at": "2026-04-09T16:41:32.734305"
+    },
+    {
+      "source": "empire_flippers",
+      "source_id": "88177",
+      "title": "EF #88177",
+      "url": "https://empireflippers.com/listing/88177",
+      "asking_price": 7171129.0,
+      "mrr": null,
+      "annual_profit": null,
+      "multiple": null,
+      "monetization_type": null,
+      "platform": null,
+      "description": "This listing is for an Amazon FBA business in the home niche, specializing in pest control products. Founded with a streamlined and efficient model, the business currently generates 6.5% of its sales in Europe, with the remainder coming from the U.S. market.\n\nThe hero SKU has built a strong presence",
+      "is_pet_wellness": false,
+      "created_at": "2026-04-09T16:41:32.734251"
+    },
+    {
+      "source": "empire_flippers",
+      "source_id": "50902",
+      "title": "EF #50902",
+      "url": "https://empireflippers.com/listing/50902",
+      "asking_price": 9204689.0,
+      "mrr": null,
+      "annual_profit": null,
+      "multiple": null,
+      "monetization_type": null,
+      "platform": null,
+      "description": "This listing is for an FBA and eCommerce business created in July 2015 in the children's niche. The included Seller Central account features 39 SKUs for children’s toys selling throughout North America. The business’s products all have 4.4 - 4.8 stars as well as a couple of custom molds for top prod",
+      "is_pet_wellness": false,
+      "created_at": "2026-04-09T16:41:32.734202"
+    },
+    {
+      "source": "empire_flippers",
+      "source_id": "54883",
+      "title": "EF #54883",
+      "url": "https://empireflippers.com/listing/54883",
+      "asking_price": 9437210.0,
+      "mrr": null,
+      "annual_profit": null,
+      "multiple": null,
+      "monetization_type": null,
+      "platform": null,
+      "description": "This listing is for an Amazon FBA and eCommerce business created in October 2016 in the home and outdoors niches. The included Amazon Seller Central account features 202 SKUs (65 of which are backup FBM offers) predominantly for Home Cleaning Products, but also including products for home maintenanc",
+      "is_pet_wellness": false,
+      "created_at": "2026-04-09T16:41:32.734125"
+    },
+    {
+      "source": "empire_flippers",
+      "source_id": "49742",
+      "title": "EF #49742",
+      "url": "https://empireflippers.com/listing/49742",
+      "asking_price": 10303887.0,
+      "mrr": null,
+      "annual_profit": null,
+      "multiple": null,
+      "monetization_type": null,
+      "platform": null,
+      "description": "This listing is for an Amazon FBA business created in December 2016 in the home niche. The included Amazon Seller Central account, which is registered with Amazon's Brand Registry 2.0, features 22 SKUs used for cooking and camping, including Amazon's Choice products and one product with over 21,000 ",
+      "is_pet_wellness": false,
+      "created_at": "2026-04-09T16:41:32.734033"
+    },
+    {
+      "source": "empire_flippers",
+      "source_id": "89990",
+      "title": "EF #89990",
+      "url": "https://empireflippers.com/listing/89990",
+      "asking_price": 11268960.0,
+      "mrr": null,
+      "annual_profit": null,
+      "multiple": null,
+      "monetization_type": null,
+      "platform": null,
+      "description": "This is an established Amazon FBA business founded in September 2020, operating in the cooking utensils category with a strong, recognizable brand presence. The product portfolio includes 26 SKUs in the US and 8 SKUs across the UK and EU, with hero products boasting over 6,000 reviews and an average",
+      "is_pet_wellness": false,
+      "created_at": "2026-04-09T16:41:32.733976"
+    },
+    {
+      "source": "empire_flippers",
+      "source_id": "47459",
+      "title": "EF #47459",
+      "url": "https://empireflippers.com/listing/47459",
+      "asking_price": 11883060.0,
+      "mrr": null,
+      "annual_profit": null,
+      "multiple": null,
+      "monetization_type": null,
+      "platform": null,
+      "description": "This listing is for an Amazon FBA and eCommerce business created in January 2016 in the personal care and bed & bath niches. The included Seller Central account features three brands in multiple niches with 26 SKUs selling in the US and MX markets and 8 SKUs selling in the EU (UK, DE, FR, ES, IT) ma",
+      "is_pet_wellness": false,
+      "created_at": "2026-04-09T16:41:32.733919"
+    },
+    {
+      "source": "empire_flippers",
+      "source_id": "56827",
+      "title": "EF #56827",
+      "url": "https://empireflippers.com/listing/56827",
+      "asking_price": 12350343.0,
+      "mrr": null,
+      "annual_profit": null,
+      "multiple": null,
+      "monetization_type": null,
+      "platform": null,
+      "description": "This listing is for an Amazon FBA and eCommerce business created in December 2015 in the sports and health & fitness niches. The included Amazon Seller Central account features 760+ SKUs under 10 different brands, five of which are trademarked and registered with Amazon's Brand Registry 2.0, for bra",
+      "is_pet_wellness": false,
+      "created_at": "2026-04-09T16:41:32.733801"
+    },
+    {
+      "source": "empire_flippers",
+      "source_id": "61148",
+      "title": "EF #61148",
+      "url": "https://empireflippers.com/listing/61148",
+      "asking_price": 13603794.0,
+      "mrr": null,
+      "annual_profit": null,
+      "multiple": null,
+      "monetization_type": null,
+      "platform": null,
+      "description": "This listing is for a subscription box and eCommerce business created in  March 2018 in the jewelry, religion & spirituality, and personal care niches. The Shopify store offers subscription boxes of spiritual jewelry and personal care products. The trademarked brand has a subscriber base of 30K memb",
+      "is_pet_wellness": false,
+      "created_at": "2026-04-09T16:41:32.733714"
+    },
+    {
+      "source": "empire_flippers",
+      "source_id": "90682",
+      "title": "EF #90682",
+      "url": "https://empireflippers.com/listing/90682",
+      "asking_price": 16000000.0,
+      "mrr": null,
+      "annual_profit": null,
+      "multiple": null,
+      "monetization_type": null,
+      "platform": null,
+      "description": "Founded in 2018, this is a high-authority, crypto-native news platform and news wire service ranked among the top 10 globally in its category. The business delivers large-scale reach through a combination of its owned media platform and an extensive syndication network, making it a powerful distribu",
+      "is_pet_wellness": false,
+      "created_at": "2026-04-09T16:41:32.733624"
+    },
+    {
+      "source": "empire_flippers",
+      "source_id": "88520",
+      "title": "EF #88520",
+      "url": "https://empireflippers.com/listing/88520",
+      "asking_price": null,
+      "mrr": null,
+      "annual_profit": null,
+      "multiple": null,
+      "monetization_type": null,
+      "platform": null,
+      "description": "This Amazon FBA brand in the supplements space has rapidly grown since its 2021 launch by delivering premium, science-backed nutrition solutions produced in the United States. The company has built a loyal customer base, evidenced by 10,500+ active subscribers, 10,000+ reviews, and an impressive 60%",
+      "is_pet_wellness": true,
+      "created_at": "2026-04-09T16:41:32.733556"
+    },
+    {
+      "source": "empire_flippers",
+      "source_id": "86610",
+      "title": "EF #86610",
+      "url": "https://empireflippers.com/listing/86610",
+      "asking_price": null,
+      "mrr": null,
+      "annual_profit": null,
+      "multiple": null,
+      "monetization_type": null,
+      "platform": null,
+      "description": "For sale is a robust portfolio of 13 Shopify stores in the formal and workwear niche, distinguished by a significant monthly sales volume exceeding $500,000. Each Shopify store is under a different domain, and further niched down to a specific type of clothing. Notably, several domains are highly de",
+      "is_pet_wellness": false,
+      "created_at": "2026-04-09T16:41:32.733474"
+    },
+    {
+      "source": "empire_flippers",
+      "source_id": "87195",
+      "title": "EF #87195",
+      "url": "https://empireflippers.com/listing/87195",
+      "asking_price": null,
+      "mrr": null,
+      "annual_profit": null,
+      "multiple": null,
+      "monetization_type": null,
+      "platform": null,
+      "description": "This listing is for a fast-growing, design-protected Amazon FBA brand in the day planning and journaling space, generating over $4.1M in TTM revenue with 24% net margins. Established in 2018, the business has built a strong reputation through a combination of high-quality, copyright-protected produc",
+      "is_pet_wellness": false,
+      "created_at": "2026-04-09T16:41:32.722282"
+    },
+    {
+      "source": "empire_flippers",
+      "source_id": "91508",
+      "title": "EF #91508",
+      "url": "https://empireflippers.com/listing/91508",
+      "asking_price": 59010.0,
+      "mrr": null,
+      "annual_profit": null,
+      "multiple": null,
+      "monetization_type": null,
+      "platform": null,
+      "description": "Launched in 2020, this Amazon FBA business operates in the racket sports niche, offering 13 SKUs, including table tennis and pickleball equipment, featuring a patented ergonomic design. Key strengths include proprietary product differentiation through registered patents across multiple regions, a di",
+      "is_pet_wellness": false,
+      "created_at": "2026-04-09T16:41:32.722224"
+    },
+    {
+      "source": "empire_flippers",
+      "source_id": "93346",
+      "title": "EF #93346",
+      "url": "https://empireflippers.com/listing/93346",
+      "asking_price": 70899.0,
+      "mrr": null,
+      "annual_profit": null,
+      "multiple": null,
+      "monetization_type": null,
+      "platform": null,
+      "description": "Launched in 2025, this Display Advertising site operates in the Lifestyle, Home Decor, Food, and Gardening niches, monetized primarily through display advertising. The business leverages simple, highly engaging content tailored for mass appeal, with a strong emphasis on Pinterest-driven traffic. Key",
+      "is_pet_wellness": false,
+      "created_at": "2026-04-09T16:41:32.721617"
+    },
+    {
+      "source": "empire_flippers",
+      "source_id": "91302",
+      "title": "EF #91302",
+      "url": "https://empireflippers.com/listing/91302",
+      "asking_price": 84559.0,
+      "mrr": null,
+      "annual_profit": null,
+      "multiple": null,
+      "monetization_type": null,
+      "platform": null,
+      "description": "Launched in 2021, this Amazon FBA business operates in the home fragrance niche, selling organic soy scented candles through a streamlined catalog of 1 parent ASIN with 8 scent variants. The brand has established itself with a focused product offering, healthy profit margins, and a simple operationa",
+      "is_pet_wellness": false,
+      "created_at": "2026-04-09T16:41:32.720026"
+    },
+    {
+      "source": "empire_flippers",
+      "source_id": "93061",
+      "title": "EF #93061",
+      "url": "https://empireflippers.com/listing/93061",
+      "asking_price": 98394.0,
+      "mrr": null,
+      "annual_profit": null,
+      "multiple": null,
+      "monetization_type": null,
+      "platform": null,
+      "description": "This Instagram + Amazon KDP-based poetry business has captivated over 200,000 followers, making it a leading brand in the couples' poetry niche. The account drives substantial traffic to Amazon KDP, where new books are published one to two times per year, authored through a combination of freelance ",
+      "is_pet_wellness": false,
+      "created_at": "2026-04-09T16:41:32.719944"
+    },
+    {
+      "source": "empire_flippers",
+      "source_id": "93186",
+      "title": "EF #93186",
+      "url": "https://empireflippers.com/listing/93186",
+      "asking_price": 113127.0,
+      "mrr": null,
+      "annual_profit": null,
+      "multiple": null,
+      "monetization_type": null,
+      "platform": null,
+      "description": "Founded in September 2023, this Amazon FBA business operates in the pet accessories niche with a focused catalog of 9 SKUs. The brand has established a streamlined and efficient operational model, supported by a single supplier who manufactures all products. Inventory is managed through Amazon FBA a",
+      "is_pet_wellness": true,
+      "created_at": "2026-04-09T16:41:32.719888"
+    },
+    {
+      "source": "empire_flippers",
+      "source_id": "92861",
+      "title": "EF #92861",
+      "url": "https://empireflippers.com/listing/92861",
+      "asking_price": 119680.0,
+      "mrr": null,
+      "annual_profit": null,
+      "multiple": null,
+      "monetization_type": null,
+      "platform": null,
+      "description": "This Amazon KDP business was started in 2024 and scaled to two separate accounts. Each account publishes books in the health, wellness and dietary niches. The seller creates all books with no team in place. However operations are streamlined, requiring minimal time commitment, supported by an establ",
+      "is_pet_wellness": true,
+      "created_at": "2026-04-09T16:41:32.719829"
+    },
+    {
+      "source": "empire_flippers",
+      "source_id": "93028",
+      "title": "EF #93028",
+      "url": "https://empireflippers.com/listing/93028",
+      "asking_price": 124000.0,
+      "mrr": null,
+      "annual_profit": null,
+      "multiple": null,
+      "monetization_type": null,
+      "platform": null,
+      "description": "Launched with a mission to support individuals living with specific chronic illnesses, this health and wellness blog delivers daily research-based articles crafted with the assistance of advanced AI tools like ChatGPT. The platform has successfully built monthly pageviews to over 100,000 thanks to i",
+      "is_pet_wellness": true,
+      "created_at": "2026-04-09T16:41:32.719736"
+    },
+    {
+      "source": "empire_flippers",
+      "source_id": "93119",
+      "title": "EF #93119",
+      "url": "https://empireflippers.com/listing/93119",
+      "asking_price": 292886.0,
+      "mrr": null,
+      "annual_profit": null,
+      "multiple": null,
+      "monetization_type": null,
+      "platform": null,
+      "description": "For sale is a collection of five relatively young YouTube channels, each specializing in a unique aspect of senior healthcare. These faceless channels operate under a fully remote production system managed by a dedicated team, including a voice-over artist, video editor, thumbnail designer, and a ce",
+      "is_pet_wellness": false,
+      "created_at": "2026-04-09T16:41:32.718234"
+    },
+    {
+      "source": "empire_flippers",
+      "source_id": "92346",
+      "title": "EF #92346",
+      "url": "https://empireflippers.com/listing/92346",
+      "asking_price": 297285.0,
+      "mrr": null,
+      "annual_profit": null,
+      "multiple": null,
+      "monetization_type": null,
+      "platform": null,
+      "description": "This listing is for a subscription-based digital product business launched in September 2016, operating in the education, employment, and lifestyle niches. The business provides an online learning platform with an extensive library of self-paced courses and certification programs. It serves individu",
+      "is_pet_wellness": false,
+      "created_at": "2026-04-09T16:41:32.718171"
+    },
+    {
+      "source": "empire_flippers",
+      "source_id": "92315",
+      "title": "EF #92315",
+      "url": "https://empireflippers.com/listing/92315",
+      "asking_price": 358558.0,
+      "mrr": null,
+      "annual_profit": null,
+      "multiple": null,
+      "monetization_type": null,
+      "platform": null,
+      "description": "This listing is for an Amazon KDP business that has demonstrated a strong pattern of growth and robust seasonal performance, with royalties escalating from $40,000 in December 2024 to $80,000 in December 2025. Averaging between 4-8 hours of weekly management outside peak times, the seller's involvem",
+      "is_pet_wellness": false,
+      "created_at": "2026-04-09T16:41:32.718071"
+    },
+    {
+      "source": "empire_flippers",
+      "source_id": "92491",
+      "title": "EF #92491",
+      "url": "https://empireflippers.com/listing/92491",
+      "asking_price": 607012.0,
+      "mrr": null,
+      "annual_profit": null,
+      "multiple": null,
+      "monetization_type": null,
+      "platform": null,
+      "description": "Launched in the UK, this thriving online business specializes in home comfort products, with its flagship offering being a highly profitable mattress topper that accounts for the majority of sales. The diverse product range also includes pillows, V-shaped pillows, bedsheets, mattress protectors, duv",
+      "is_pet_wellness": true,
+      "created_at": "2026-04-09T16:41:32.718007"
+    },
+    {
+      "source": "empire_flippers",
+      "source_id": "92938",
+      "title": "EF #92938",
+      "url": "https://empireflippers.com/listing/92938",
+      "asking_price": 1174556.0,
+      "mrr": null,
+      "annual_profit": null,
+      "multiple": null,
+      "monetization_type": null,
+      "platform": null,
+      "description": "An extraordinary opportunity to acquire a legendary pillar of skateboarding history. This is not a standard e-commerce store; it is a meticulously curated Intellectual Property (IP) powerhouse encompassing three well-known brands. With a 50+ year heritage, this business dominates the \"High-End Colle",
+      "is_pet_wellness": false,
+      "created_at": "2026-04-09T16:41:32.717934"
+    },
+    {
+      "source": "empire_flippers",
+      "source_id": "92644",
+      "title": "EF #92644",
+      "url": "https://empireflippers.com/listing/92644",
+      "asking_price": 1915396.0,
+      "mrr": null,
+      "annual_profit": null,
+      "multiple": null,
+      "monetization_type": null,
+      "platform": null,
+      "description": "This listing represents a direct-to-consumer Shopify business operating in the Automotive, Hobbies, and Sports niches. The trademarked brand specializes in high-performance electric mobility products, offering a range of scooters and related accessories designed for both urban commuting and recreati",
+      "is_pet_wellness": false,
+      "created_at": "2026-04-09T16:41:32.717835"
     }
   ]
 }

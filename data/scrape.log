@@ -1,17 +1,11 @@
 
 Scraping empire_flippers...
-  [empire_flippers] No results. Status: 200. Structure:
-  data: dict (keys: ['listings', 'count', 'pages', 'page', 'limit'])
-      listings: list (0 items)
-      count: int = 0
-      pages: int = 0
-      page: int = 1
-      limit: int = 20
-  errors: list (0 items)
-  [empire_flippers] Fetched 0 listings
+  [empire_flippers] Fetched 50 listings
 
 Scraping acquire...
-  [acquire] Error fetching browse page: 404 Client Error: Not Found for url: https://acquire.com/browse
+  [acquire] Browse URL failed: https://acquire.com/listings: 404 Client Error: Not Found for url: https://acquire.com/listings
+  [acquire] Browse URL ok: https://acquire.com/ (status 200)
+  [acquire] browse page: no cards found (status 200)
   [acquire] Found 0 listing URLs in sitemap
   [acquire] Fetched 0 listings
 
@@ -27,9 +21,9 @@ Scraping flippa...
   [flippa] HTML fallback failed: 403 Client Error: Forbidden for url: https://flippa.com/search?search_type=active&sort=most_recent
   [flippa] Fetched 0 listings
 
---- Scrape complete: 150 processed, 150 new, 1 pet/wellness ---
+--- Scrape complete: 200 processed, 200 new, 12 pet/wellness ---
 
-JSON written to data/all_listings.json (150 listings)
+JSON written to data/all_listings.json (200 listings)
 Exit code: 0
 
-JSON written to data/pet_wellness.json (1 listings)
+JSON written to data/pet_wellness.json (12 listings)
