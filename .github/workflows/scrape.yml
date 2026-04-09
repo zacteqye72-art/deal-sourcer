@@ -40,13 +40,16 @@ jobs:
         run: |
           python main.py \
             --no-pet-filter \
-            --output-file data/all_listings.json
+            --output-file data/all_listings.json \
+            2>&1 | tee data/scrape.log
+          echo "Exit code: $?" >> data/scrape.log
 
       - name: Export pet & wellness filtered results
         run: |
           python main.py \
             --list \
-            --output-file data/pet_wellness.json
+            --output-file data/pet_wellness.json \
+            2>&1 | tee -a data/scrape.log
 
       - name: Commit results
         run: |
