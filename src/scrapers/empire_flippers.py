@@ -78,10 +78,6 @@ class EmpireFlippersScraper(BaseScraper):
                     _summarise(data)
                 break
 
-            # Log first item keys once so we can verify field mapping
-            if page == 1 and results:
-                print(f"  [empire_flippers] First item keys: {list(results[0].keys())[:20]}")
-
             for item in results:
                 listing_id = str(
                     item.get("listing_number")
