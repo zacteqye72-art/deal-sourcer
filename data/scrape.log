@@ -1,23 +1,23 @@
 
 Scraping empire_flippers...
-  [empire_flippers] No results found. Response keys: ['data', 'errors']. Status: 200
+  [empire_flippers] Error fetching page 1: Expecting value: line 1 column 1 (char 0)
   [empire_flippers] Fetched 0 listings
 
 Scraping sideprojectors...
   [sideprojectors] Error fetching listing page: 403 Client Error: Forbidden for url: https://www.sideprojectors.com/project/all?type=side_project&listing_type=forsale
 
 Scraping microns...
-  [microns] Found 375 listing URLs in sitemap
-  [microns] Fetched 150 listings
+  [microns] Error fetching sitemap: not well-formed (invalid token): line 1, column 0
+  [microns] Fetched 0 listings
 
 Scraping flippa...
   [flippa] v3 API not accessible: 403 Client Error: Forbidden for url: https://flippa.com/api/v3/listings?filter%5Bstatus%5D=open&filter%5Bproperty_type%5D=established_website%2Cestablished_app%2Cstarter_site%2Csaas&sort_alias=-created_at&page%5Bnumber%5D=1&page%5Bsize%5D=50
   [flippa] HTML fallback failed: 403 Client Error: Forbidden for url: https://flippa.com/search?search_type=active&sort=most_recent
   [flippa] Fetched 0 listings
 
---- Scrape complete: 150 processed, 150 new, 1 pet/wellness ---
+--- Scrape complete: 0 processed, 0 new, 0 pet/wellness ---
 
-JSON written to data/all_listings.json (150 listings)
+JSON written to data/all_listings.json (0 listings)
 Exit code: 0
 
-JSON written to data/pet_wellness.json (1 listings)
+JSON written to data/pet_wellness.json (0 listings)
