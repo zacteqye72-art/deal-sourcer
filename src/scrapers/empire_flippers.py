@@ -78,6 +78,10 @@ class EmpireFlippersScraper(BaseScraper):
                     _summarise(data)
                 break
 
+            # Log first item keys once so we can verify field mapping
+            if page == 1 and results:
+                print(f"  [empire_flippers] First item keys: {list(results[0].keys())[:20]}")
+
             for item in results:
                 listing_id = str(
                     item.get("listing_number")
@@ -97,11 +101,13 @@ class EmpireFlippersScraper(BaseScraper):
                     item.get("annual_net_profit")
                     or item.get("annual_profit")
                     or item.get("net_profit_annualized")
+                    or item.get("avg_monthly_net_profit")
                 )
                 mrr_val = parse_price(
                     item.get("monthly_net_profit")
                     or item.get("mrr")
                     or item.get("monthly_profit")
+                    or item.get("avg_monthly_net_profit")
                 )
                 niche = (
                     item.get("niche")
@@ -119,7 +125,9 @@ class EmpireFlippersScraper(BaseScraper):
                         source_id=listing_id,
                         title=(
                             item.get("site_title")
+                            or item.get("listing_title")
                             or item.get("title")
+                            or item.get("business_name")
                             or item.get("name")
                             or f"EF #{listing_id}"
                         ),
@@ -141,10 +149,11 @@ class EmpireFlippersScraper(BaseScraper):
                     )
                 )
 
-            # Pagination
-            next_url = data.get("next") or data.get("next_page")
-            has_more = data.get("has_more") or data.get("has_next_page")
-            if not next_url and not has_more:
+            # Pagination: pages info is in data["data"] (inner dict), not outer
+            inner = data.get("data") if isinstance(data.get("data"), dict) else data
+            total_pages = inner.get("pages", 1)
+            current_page = inner.get("page", page)
+            if current_page >= total_pages:
                 break
             page += 1
             if page > 20:

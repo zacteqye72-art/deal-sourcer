@@ -118,31 +118,49 @@ class AcquireScraper(BaseScraper):
         return listings
 
     def _scrape_sitemap(self) -> list[Listing]:
-        """Fall back to sitemap listing URLs."""
+        """Fall back to sitemap listing URLs. Handles sitemap index files."""
+        import xml.etree.ElementTree as ET
         listings = []
-        try:
-            import xml.etree.ElementTree as ET
-            resp = self._get(self.SITEMAP_URL)
-            root = ET.fromstring(resp.text)
-        except Exception as e:
-            print(f"  [acquire] Sitemap fetch error: {e}")
-            return listings
-
-        ns = {"sm": "http://www.sitemaps.org/schemas/sitemap/0.9"}
         _listing_patterns = ("/listings/", "/listing/", "/startup/", "/saas/", "/app/")
-        urls = set()
-        for el in root.findall(".//sm:url/sm:loc", ns):
-            if el.text and any(p in el.text for p in _listing_patterns):
-                urls.add(el.text)
-        for el in root.findall(".//url/loc"):
-            if el.text and any(p in el.text for p in _listing_patterns):
-                urls.add(el.text)
-        # Log a sample so we can see what URL patterns the sitemap actually uses
-        all_els = root.findall(".//sm:url/sm:loc", ns) or root.findall(".//url/loc")
-        sample = [el.text for el in all_els[:5] if el.text]
-        if sample:
-            print(f"  [acquire] Sitemap sample URLs: {sample}")
+        ns = {"sm": "http://www.sitemaps.org/schemas/sitemap/0.9"}
 
+        def _collect_urls(sitemap_url: str, depth: int = 0) -> set:
+            if depth > 2:
+                return set()
+            try:
+                resp = self._get(sitemap_url)
+                root = ET.fromstring(resp.text)
+            except Exception as e:
+                print(f"  [acquire] Sitemap fetch error ({sitemap_url}): {e}")
+                return set()
+
+            # Check if this is a sitemap index (has <sitemap> children)
+            child_sitemaps = (
+                root.findall(".//sm:sitemap/sm:loc", ns)
+                or root.findall(".//sitemap/loc")
+            )
+            if child_sitemaps:
+                child_urls = [el.text for el in child_sitemaps if el.text]
+                print(f"  [acquire] Sitemap index at {sitemap_url}: {len(child_urls)} child sitemaps")
+                result = set()
+                for child_url in child_urls[:10]:  # limit child sitemaps
+                    result |= _collect_urls(child_url, depth + 1)
+                return result
+
+            # Flat sitemap — collect matching URLs
+            all_locs = (
+                root.findall(".//sm:url/sm:loc", ns)
+                or root.findall(".//url/loc")
+            )
+            sample = [el.text for el in all_locs[:5] if el.text]
+            if sample and depth == 0:
+                print(f"  [acquire] Sitemap sample URLs: {sample}")
+            return {
+                el.text for el in all_locs
+                if el.text and any(p in el.text for p in _listing_patterns)
+            }
+
+        urls = _collect_urls(self.SITEMAP_URL)
         print(f"  [acquire] Found {len(urls)} listing URLs in sitemap")
         for url in sorted(urls)[:80]:
             try:
