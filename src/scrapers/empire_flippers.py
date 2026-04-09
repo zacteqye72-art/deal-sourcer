@@ -35,10 +35,11 @@ class EmpireFlippersScraper(BaseScraper):
 
         while True:
             params = {
-                "listing_status": "Active",
+                # API ignores page_size; uses 'limit'. No listing_status filter —
+                # passing "Active" returned count=0 (param name/value not accepted).
                 "sort": "-first_listed_at",
                 "page": page,
-                "page_size": 50,
+                "limit": 50,
             }
             try:
                 resp = self._get(self.API_URL, params=params)

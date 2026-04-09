@@ -13,8 +13,12 @@ from src.scrapers.base import BaseScraper
 
 class AcquireScraper(BaseScraper):
     name = "acquire"
-    # Acquire.com exposes listing data via a public search/browse endpoint
-    BROWSE_URL = "https://acquire.com/browse"
+    # Try multiple browse URL candidates in order
+    BROWSE_URLS = [
+        "https://acquire.com/listings",
+        "https://acquire.com/",
+        "https://acquire.com/search",
+    ]
     SITEMAP_URL = "https://acquire.com/sitemap.xml"
 
     def scrape(self) -> list[Listing]:
@@ -25,12 +29,18 @@ class AcquireScraper(BaseScraper):
         return listings
 
     def _scrape_browse(self) -> list[Listing]:
-        """Try the browse page and extract embedded JSON or listing cards."""
+        """Try known browse URLs and extract embedded JSON or listing cards."""
         listings = []
-        try:
-            resp = self._get(self.BROWSE_URL)
-        except Exception as e:
-            print(f"  [acquire] Error fetching browse page: {e}")
+        resp = None
+        for browse_url in self.BROWSE_URLS:
+            try:
+                resp = self._get(browse_url)
+                print(f"  [acquire] Browse URL ok: {browse_url} (status {resp.status_code})")
+                break
+            except Exception as e:
+                print(f"  [acquire] Browse URL failed: {browse_url}: {e}")
+                resp = None
+        if resp is None:
             return listings
 
         soup = BeautifulSoup(resp.text, "html.parser")
@@ -119,13 +129,19 @@ class AcquireScraper(BaseScraper):
             return listings
 
         ns = {"sm": "http://www.sitemaps.org/schemas/sitemap/0.9"}
+        _listing_patterns = ("/listings/", "/listing/", "/startup/", "/saas/", "/app/")
         urls = set()
         for el in root.findall(".//sm:url/sm:loc", ns):
-            if el.text and "/listings/" in el.text:
+            if el.text and any(p in el.text for p in _listing_patterns):
                 urls.add(el.text)
         for el in root.findall(".//url/loc"):
-            if el.text and "/listings/" in el.text:
+            if el.text and any(p in el.text for p in _listing_patterns):
                 urls.add(el.text)
+        # Log a sample so we can see what URL patterns the sitemap actually uses
+        all_els = root.findall(".//sm:url/sm:loc", ns) or root.findall(".//url/loc")
+        sample = [el.text for el in all_els[:5] if el.text]
+        if sample:
+            print(f"  [acquire] Sitemap sample URLs: {sample}")
 
         print(f"  [acquire] Found {len(urls)} listing URLs in sitemap")
         for url in sorted(urls)[:80]:
