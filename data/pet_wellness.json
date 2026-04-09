@@ -1,38 +1,23 @@
 {
-  "scraped_at": "2026-04-09T16:12:45.059858+00:00",
-  "total": 2,
+  "scraped_at": "2026-04-09T16:19:37.624970+00:00",
+  "total": 1,
   "new_count": 0,
-  "pet_wellness_count": 2,
+  "pet_wellness_count": 1,
   "listings": [
     {
       "source": "microns",
-      "source_id": "discord-verification-bot",
-      "title": "discord-verification-bot",
-      "url": "https://www.microns.io/startup-listings/discord-verification-bot",
-      "asking_price": 8000.0,
+      "source_id": "natural-supplements-online-store",
+      "title": "natural-supplements-online-store",
+      "url": "https://www.microns.io/startup-listings/natural-supplements-online-store",
+      "asking_price": 120000.0,
       "mrr": null,
       "annual_profit": null,
       "multiple": null,
       "monetization_type": null,
       "platform": null,
-      "description": "Discord verification bot with over 7+ verification types. Micro-SaaS with $780 in Annual Revenue. Built with WordPress, Botghost, Discord.",
+      "description": "eBay and Shopify online store selling natural supplements. E-commerce with $90,000 in Annual Revenue. Built with Shopify.",
       "is_pet_wellness": true,
-      "created_at": "2026-04-09T16:12:41.428376"
-    },
-    {
-      "source": "microns",
-      "source_id": "petitions-wp-plugin",
-      "title": "petitions-wp-plugin",
-      "url": "https://www.microns.io/startup-listings/petitions-wp-plugin",
-      "asking_price": 13000.0,
-      "mrr": null,
-      "annual_profit": null,
-      "multiple": null,
-      "monetization_type": null,
-      "platform": null,
-      "description": "Plugin allowing the creation of WordPress petition forms and sending petitions directly from WordPress. Plugin with $8,300 in Annual Revenue. Built with PHP, CSS, MySQL, JQuery.",
-      "is_pet_wellness": true,
-      "created_at": "2026-04-09T16:12:21.377759"
+      "created_at": "2026-04-09T16:18:07.126970"
     }
   ]
 }
