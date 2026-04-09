@@ -1,13 +1,16 @@
 
 Scraping empire_flippers...
-  [empire_flippers] Fetched 50 listings
+  [empire_flippers] First item keys: ['id', 'listing_number', 'public_title', 'average_monthly_net_profit', 'average_monthly_expenses', 'average_monthly_gross_revenue', 'country', 'countries', 'first_made_money_at', 'listing_price', 'unpriced', 'seller_interview_link', 'listing_multiple', 'listing_multiple_type', 'uses_pbn', 'listing_status', 'summary', 'hours_worked_per_week', 'opportunities', 'risks']
+  [empire_flippers] Fetched 1000 listings
 
 Scraping acquire...
   [acquire] Browse URL failed: https://acquire.com/listings: 404 Client Error: Not Found for url: https://acquire.com/listings
   [acquire] Browse URL ok: https://acquire.com/ (status 200)
   [acquire] browse page: no cards found (status 200)
-  [acquire] Found 0 listing URLs in sitemap
-  [acquire] Fetched 0 listings
+  [acquire] Sitemap index at https://acquire.com/sitemap.xml: 2 child sitemaps
+  [acquire] Sitemap fetch error (https://acquire.com/sitemap_base.xml.gz): not well-formed (invalid token): line 1, column 0
+  [acquire] Found 1320 listing URLs in sitemap
+  [acquire] Fetched 80 listings
 
 Scraping sideprojectors...
   [sideprojectors] Error fetching listing page: 403 Client Error: Forbidden for url: https://www.sideprojectors.com/project/all?type=side_project&listing_type=forsale
@@ -21,9 +24,9 @@ Scraping flippa...
   [flippa] HTML fallback failed: 403 Client Error: Forbidden for url: https://flippa.com/search?search_type=active&sort=most_recent
   [flippa] Fetched 0 listings
 
---- Scrape complete: 200 processed, 200 new, 12 pet/wellness ---
+--- Scrape complete: 1230 processed, 1230 new, 104 pet/wellness ---
 
-JSON written to data/all_listings.json (200 listings)
+JSON written to data/all_listings.json (1230 listings)
 Exit code: 0
 
-JSON written to data/pet_wellness.json (12 listings)
+JSON written to data/pet_wellness.json (104 listings)
