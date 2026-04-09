@@ -1,0 +1,13 @@
+[project]
+name = "deal-sourcer"
+version = "0.1.0"
+description = "Micro-acquisition deal sourcing pipeline — scrapes marketplaces, filters for pet-related app projects"
+requires-python = ">=3.11"
+dependencies = [
+    "requests>=2.31",
+    "beautifulsoup4>=4.12",
+    "feedparser>=6.0",
+]
+
+[project.scripts]
+deal-sourcer = "main:main"
