@@ -1,6 +1,5 @@
 
 Scraping empire_flippers...
-  [empire_flippers] First item keys: ['id', 'listing_number', 'public_title', 'average_monthly_net_profit', 'average_monthly_expenses', 'average_monthly_gross_revenue', 'country', 'countries', 'first_made_money_at', 'listing_price', 'unpriced', 'seller_interview_link', 'listing_multiple', 'listing_multiple_type', 'uses_pbn', 'listing_status', 'summary', 'hours_worked_per_week', 'opportunities', 'risks']
   [empire_flippers] Fetched 1000 listings
 
 Scraping acquire...
