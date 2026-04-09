@@ -5,24 +5,13 @@ import requests
 
 from src.models import Listing
 
-# Browser-like headers reduce 403s from bot-detection
+# Neutral research-bot UA — works for sitemaps and public APIs.
+# Chrome-style UA was tried and broke EF (empty body) + Microns sitemap (HTML).
 _DEFAULT_HEADERS = {
-    "User-Agent": (
-        "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) "
-        "AppleWebKit/537.36 (KHTML, like Gecko) "
-        "Chrome/124.0.0.0 Safari/537.36"
-    ),
-    "Accept": (
-        "text/html,application/xhtml+xml,application/xml;q=0.9,"
-        "image/avif,image/webp,*/*;q=0.8"
-    ),
+    "User-Agent": "DealSourcer/1.0 (micro-acquisition research; github.com/zacteqye72-art/deal-sourcer)",
+    "Accept": "application/json, application/xml, text/xml, text/html, */*;q=0.8",
     "Accept-Language": "en-US,en;q=0.9",
-    "Accept-Encoding": "gzip, deflate, br",
-    "Connection": "keep-alive",
-    "Upgrade-Insecure-Requests": "1",
-    "Sec-Fetch-Dest": "document",
-    "Sec-Fetch-Mode": "navigate",
-    "Sec-Fetch-Site": "none",
+    "Accept-Encoding": "gzip, deflate",
 }
 
 
@@ -38,7 +27,7 @@ class BaseScraper(ABC):
         self._last_request_time = 0.0
 
     def _get(self, url: str, **kwargs) -> requests.Response:
-        """Rate-limited GET request with browser-like headers."""
+        """Rate-limited GET request."""
         elapsed = time.time() - self._last_request_time
         if elapsed < self.rate_limit_seconds:
             time.sleep(self.rate_limit_seconds - elapsed)

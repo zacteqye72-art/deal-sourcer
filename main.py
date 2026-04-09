@@ -9,6 +9,7 @@ from pathlib import Path
 
 from src.db import init_db, upsert_listing, get_listings
 from src.filters import is_pet_related
+from src.scrapers.acquire import AcquireScraper
 from src.scrapers.empire_flippers import EmpireFlippersScraper
 from src.scrapers.sideprojectors import SideProjectorsScraper
 from src.scrapers.microns import MicronsScraper
@@ -16,6 +17,7 @@ from src.scrapers.flippa import FlippaScraper
 
 SCRAPERS = {
     "empire_flippers": EmpireFlippersScraper,
+    "acquire": AcquireScraper,
     "sideprojectors": SideProjectorsScraper,
     "microns": MicronsScraper,
     "flippa": FlippaScraper,
