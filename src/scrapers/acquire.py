@@ -125,11 +125,16 @@ class AcquireScraper(BaseScraper):
         ns = {"sm": "http://www.sitemaps.org/schemas/sitemap/0.9"}
 
         def _collect_urls(sitemap_url: str, depth: int = 0) -> set:
+            import gzip, io
             if depth > 2:
                 return set()
             try:
                 resp = self._get(sitemap_url)
-                root = ET.fromstring(resp.text)
+                if sitemap_url.endswith(".gz"):
+                    xml_bytes = gzip.decompress(resp.content)
+                    root = ET.fromstring(xml_bytes.decode("utf-8", errors="replace"))
+                else:
+                    root = ET.fromstring(resp.text)
             except Exception as e:
                 print(f"  [acquire] Sitemap fetch error ({sitemap_url}): {e}")
                 return set()
@@ -162,7 +167,7 @@ class AcquireScraper(BaseScraper):
 
         urls = _collect_urls(self.SITEMAP_URL)
         print(f"  [acquire] Found {len(urls)} listing URLs in sitemap")
-        for url in sorted(urls)[:80]:
+        for url in sorted(urls)[:200]:
             try:
                 listing = self._fetch_listing_page(url)
                 if listing:

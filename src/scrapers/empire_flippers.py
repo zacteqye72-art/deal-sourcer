@@ -97,17 +97,21 @@ class EmpireFlippersScraper(BaseScraper):
                     or item.get("price")
                     or item.get("asking_price")
                 )
-                annual = parse_price(
+                # API confirmed keys: average_monthly_net_profit, listing_multiple
+                mrr_val = parse_price(
+                    item.get("average_monthly_net_profit")
+                    or item.get("monthly_net_profit")
+                    or item.get("mrr")
+                )
+                annual = (mrr_val * 12) if mrr_val else parse_price(
                     item.get("annual_net_profit")
                     or item.get("annual_profit")
-                    or item.get("net_profit_annualized")
-                    or item.get("avg_monthly_net_profit")
                 )
-                mrr_val = parse_price(
-                    item.get("monthly_net_profit")
-                    or item.get("mrr")
-                    or item.get("monthly_profit")
-                    or item.get("avg_monthly_net_profit")
+                # Use API-provided multiple when available
+                api_multiple = item.get("listing_multiple")
+                multiple = (
+                    float(api_multiple) if api_multiple and str(api_multiple).replace(".", "", 1).isdigit()
+                    else calc_multiple(price, annual)
                 )
                 niche = (
                     item.get("niche")
@@ -124,10 +128,10 @@ class EmpireFlippersScraper(BaseScraper):
                         source=self.name,
                         source_id=listing_id,
                         title=(
-                            item.get("site_title")
+                            item.get("public_title")
+                            or item.get("site_title")
                             or item.get("listing_title")
                             or item.get("title")
-                            or item.get("business_name")
                             or item.get("name")
                             or f"EF #{listing_id}"
                         ),
@@ -135,7 +139,7 @@ class EmpireFlippersScraper(BaseScraper):
                         asking_price=price,
                         mrr=mrr_val,
                         annual_profit=annual,
-                        multiple=calc_multiple(price, annual),
+                        multiple=multiple,
                         monetization_type=monetization or None,
                         platform=niche or None,
                         business_age_months=item.get("months_old"),
