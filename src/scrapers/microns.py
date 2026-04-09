@@ -66,10 +66,13 @@ class MicronsScraper(BaseScraper):
             resp = self._get(url)
             soup = BeautifulSoup(resp.text, "html.parser")
 
-            # Title from h1
-            title_el = soup.find("h1")
+            # Title from h1 → h2 → og:title → slug
+            title_el = soup.find("h1") or soup.find("h2") or soup.find("h3")
+            og_title = soup.find("meta", property="og:title")
             title_text = (
-                title_el.get_text(strip=True) if title_el else url.split("/")[-1]
+                title_el.get_text(strip=True)
+                if title_el
+                else (og_title["content"] if og_title else url.split("/")[-1])
             )
             if not title_text or len(title_text) < 3:
                 return None
