@@ -7,86 +7,26 @@ from src.models import Listing
 from src.normalize import parse_price, calc_multiple
 from src.scrapers.base import BaseScraper
 
+LISTING_URL_PREFIXES = (
+    "https://www.microns.io/startup-listings/",
+    "https://microns.io/startup-listings/",
+    "https://www.microns.io/startup-listing/",
+    "https://microns.io/startup-listing/",
+)
+
+
+def _is_listing_url(url: str) -> bool:
+    return bool(url) and any(url.startswith(p) for p in LISTING_URL_PREFIXES)
+
 
 class MicronsScraper(BaseScraper):
     name = "microns"
-    RSS_URL = "https://newsletter.microns.io/feed"
     SITEMAP_URL = "https://microns.io/sitemap.xml"
-    BASE_URL = "https://microns.io"
 
     def scrape(self) -> list[Listing]:
-        listings = []
-        seen_urls = set()
-
-        # 1. Parse RSS feed
-        rss_listings = self._scrape_rss()
-        for listing in rss_listings:
-            if listing.url not in seen_urls:
-                listings.append(listing)
-                seen_urls.add(listing.url)
-
-        # 2. Parse sitemap for listing URLs
-        sitemap_listings = self._scrape_sitemap()
-        for listing in sitemap_listings:
-            if listing.url not in seen_urls:
-                listings.append(listing)
-                seen_urls.add(listing.url)
-
+        """Scrape only via sitemap — avoids newsletter noise from RSS."""
+        listings = self._scrape_sitemap()
         print(f"  [microns] Fetched {len(listings)} listings")
-        return listings
-
-    def _scrape_rss(self) -> list[Listing]:
-        listings = []
-        try:
-            resp = self._get(self.RSS_URL)
-            root = ET.fromstring(resp.text)
-        except Exception as e:
-            print(f"  [microns] Error fetching RSS: {e}")
-            return listings
-
-        # RSS items are under channel/item
-        ns = {"atom": "http://www.w3.org/2005/Atom"}
-        items = root.findall(".//item")
-        if not items:
-            items = root.findall(".//entry", ns) or root.findall(".//{http://www.w3.org/2005/Atom}entry")
-
-        for item in items:
-            try:
-                title = self._text(item, "title")
-                link = self._text(item, "link")
-                if not link:
-                    link_el = item.find("link")
-                    if link_el is not None:
-                        link = link_el.get("href", "")
-                desc = self._text(item, "description") or self._text(item, "summary") or ""
-
-                if not title or not link:
-                    continue
-
-                # Try to find listing URL in the post content
-                listing_url = link
-                content = self._text(item, "content:encoded") or self._text(item, "{http://purl.org/rss/1.0/modules/content/}encoded") or desc
-                if content and "microns.io" in content:
-                    soup = BeautifulSoup(content, "html.parser")
-                    for a in soup.find_all("a", href=True):
-                        if "microns.io" in a["href"] and "/startup-listing" in a["href"]:
-                            listing_url = a["href"]
-                            break
-
-                source_id = listing_url.rstrip("/").split("/")[-1] or title[:50]
-
-                listings.append(Listing(
-                    source=self.name,
-                    source_id=source_id,
-                    title=title,
-                    url=listing_url,
-                    description=BeautifulSoup(desc, "html.parser").get_text()[:500] if desc else "",
-                    raw_data=json.dumps({"rss_title": title, "rss_link": link}),
-                ))
-            except Exception as e:
-                print(f"  [microns] Error parsing RSS item: {e}")
-                continue
-
         return listings
 
     def _scrape_sitemap(self) -> list[Listing]:
@@ -98,20 +38,19 @@ class MicronsScraper(BaseScraper):
             print(f"  [microns] Error fetching sitemap: {e}")
             return listings
 
-        # Extract URLs matching /startup-listing/
         ns = {"sm": "http://www.sitemaps.org/schemas/sitemap/0.9"}
-        urls = []
+        urls: set[str] = set()
         for url_el in root.findall(".//sm:url/sm:loc", ns):
-            if url_el.text and "/startup-listing" in url_el.text:
-                urls.append(url_el.text)
-        # Also try without namespace
+            if url_el.text and _is_listing_url(url_el.text):
+                urls.add(url_el.text)
         for url_el in root.findall(".//url/loc"):
-            if url_el.text and "/startup-listing" in url_el.text:
-                urls.append(url_el.text)
+            if url_el.text and _is_listing_url(url_el.text):
+                urls.add(url_el.text)
 
-        urls = list(set(urls))[:50]  # cap at 50 for MVP
+        print(f"  [microns] Found {len(urls)} listing URLs in sitemap")
+        url_list = sorted(urls)[:150]  # cap at 150
 
-        for url in urls:
+        for url in url_list:
             try:
                 listing = self._fetch_listing_page(url)
                 if listing:
@@ -127,10 +66,34 @@ class MicronsScraper(BaseScraper):
             resp = self._get(url)
             soup = BeautifulSoup(resp.text, "html.parser")
 
-            title = soup.find("h1")
-            title_text = title.get_text(strip=True) if title else url.split("/")[-1]
+            # Title from h1 → h2 → og:title → slug
+            title_el = soup.find("h1") or soup.find("h2") or soup.find("h3")
+            og_title = soup.find("meta", property="og:title")
+            title_text = (
+                title_el.get_text(strip=True)
+                if title_el
+                else (og_title["content"] if og_title else url.split("/")[-1])
+            )
+            if not title_text or len(title_text) < 3:
+                return None
 
-            # Look for price
+            # Skip if the page looks like a blog/newsletter post
+            # (listing pages have a buy/offer button or price)
+            is_listing = bool(
+                soup.find(string=lambda t: t and "$" in str(t))
+                or soup.find("button", string=lambda t: t and (
+                    "buy" in str(t).lower() or "offer" in str(t).lower()
+                    or "acquire" in str(t).lower()
+                ))
+            )
+            if not is_listing:
+                # Only skip if description also looks like a blog post
+                meta_desc = soup.find("meta", attrs={"name": "description"})
+                desc_text = meta_desc["content"] if meta_desc else ""
+                if not desc_text or len(desc_text) < 20:
+                    return None
+
+            # Price
             price = None
             for el in soup.find_all(string=lambda t: t and "$" in str(t)):
                 p = parse_price(str(el).strip())
@@ -138,15 +101,19 @@ class MicronsScraper(BaseScraper):
                     price = p
                     break
 
-            # Description from meta or first paragraphs
+            # Description
             desc_meta = soup.find("meta", attrs={"name": "description"})
             description = desc_meta["content"] if desc_meta else ""
             if not description:
-                description = " ".join(p.get_text(strip=True) for p in soup.find_all("p")[:3])
+                description = " ".join(
+                    p.get_text(strip=True) for p in soup.find_all("p")[:3]
+                )
 
             # Revenue
             annual_revenue = None
-            for el in soup.find_all(string=lambda t: t and "revenue" in str(t).lower()):
+            for el in soup.find_all(
+                string=lambda t: t and "revenue" in str(t).lower()
+            ):
                 parent = el.find_parent()
                 if parent:
                     rev = parse_price(parent.get_text())
@@ -155,7 +122,6 @@ class MicronsScraper(BaseScraper):
                         break
 
             source_id = url.rstrip("/").split("/")[-1]
-
             return Listing(
                 source=self.name,
                 source_id=source_id,
@@ -167,10 +133,6 @@ class MicronsScraper(BaseScraper):
                 description=description[:500],
                 raw_data=json.dumps({"page_url": url}),
             )
-        except Exception:
+        except Exception as e:
+            print(f"  [microns] Error parsing {url}: {e}")
             return None
-
-    @staticmethod
-    def _text(element, tag: str) -> str:
-        el = element.find(tag)
-        return el.text.strip() if el is not None and el.text else ""

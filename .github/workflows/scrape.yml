@@ -1,0 +1,61 @@
+name: Scrape & Store Results
+
+on:
+  push:
+    branches:
+      - claude/setup-n8n-workflow-8Mybm
+      - main
+    paths:
+      - 'src/**'
+      - 'main.py'
+      - '.github/workflows/scrape.yml'
+  schedule:
+    # Run daily at 01:00 UTC (09:00 CST)
+    - cron: '0 1 * * *'
+  workflow_dispatch:
+
+jobs:
+  scrape:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          # Use GITHUB_TOKEN so the commit can trigger downstream workflows
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+          cache: 'pip'
+
+      - name: Install dependencies
+        run: pip install requests beautifulsoup4
+
+      - name: Run scrapers (all sources, store everything)
+        run: |
+          python main.py \
+            --no-pet-filter \
+            --output-file data/all_listings.json \
+            2>&1 | tee data/scrape.log
+          echo "Exit code: $?" >> data/scrape.log
+
+      - name: Export pet & wellness filtered results
+        run: |
+          python main.py \
+            --list \
+            --output-file data/pet_wellness.json \
+            2>&1 | tee -a data/scrape.log
+
+      - name: Commit results
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add data/
+          git diff --staged --quiet && echo "No changes to commit" && exit 0
+          git commit -m "data: update scraped listings [skip ci]"
+          git push origin HEAD

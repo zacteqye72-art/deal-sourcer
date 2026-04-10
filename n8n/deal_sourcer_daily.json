@@ -1,0 +1,233 @@
+{
+  "name": "Deal Sourcer — Daily Pet & Wellness Digest",
+  "nodes": [
+    {
+      "id": "a1b2c3d4-0001-4000-8000-000000000001",
+      "name": "Daily Schedule",
+      "type": "n8n-nodes-base.scheduleTrigger",
+      "typeVersion": 1.1,
+      "position": [240, 380],
+      "parameters": {
+        "rule": {
+          "interval": [
+            {
+              "field": "cronExpression",
+              "expression": "0 1 * * *"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "a1b2c3d4-0002-4000-8000-000000000002",
+      "name": "Fetch Empire Flippers",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.1,
+      "position": [460, 380],
+      "parameters": {
+        "method": "GET",
+        "url": "https://api.empireflippers.com/api/v1/listings/list",
+        "authentication": "none",
+        "options": {
+          "timeout": 30000,
+          "response": {"response": {"responseFormat": "json"}}
+        },
+        "queryParameters": {
+          "parameters": [
+            {"name": "listing_status", "value": "Active"},
+            {"name": "sort", "value": "-first_listed_at"},
+            {"name": "page", "value": "1"},
+            {"name": "page_size", "value": "100"}
+          ]
+        },
+        "sendHeaders": true,
+        "headerParameters": {
+          "parameters": [{"name": "User-Agent", "value": "DealSourcer/1.0"}]
+        }
+      },
+      "continueOnFail": true
+    },
+    {
+      "id": "a1b2c3d4-0003-4000-8000-000000000003",
+      "name": "Parse Empire Flippers",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [680, 380],
+      "parameters": {
+        "mode": "runOnceForAllItems",
+        "jsCode": "// Parse EF API response; pass through as single item with ef_listings array\nconst data = $input.first()?.json ?? {};\nconst results = data.results || data.data || [];\n\nconst ef_listings = results.map(item => ({\n  source: 'empire_flippers',\n  source_id: String(item.listing_number || item.id || ''),\n  title: item.site_title || item.title || '',\n  url: `https://empireflippers.com/listing/${item.listing_number || item.id}`,\n  asking_price: item.listing_price || item.price || null,\n  mrr: item.monthly_net_profit || item.mrr || null,\n  annual_profit: item.annual_net_profit || item.annual_profit || null,\n  niche: item.niche || item.category || '',\n  monetization: Array.isArray(item.monetization) ? item.monetization.join(', ') : (item.monetization || ''),\n  description: item.listing_summary || item.summary || '',\n})).filter(l => l.source_id);\n\n// Pass single item downstream so Fetch Microns runs exactly once\nreturn [{ json: { ef_listings } }];"
+      }
+    },
+    {
+      "id": "a1b2c3d4-0004-4000-8000-000000000004",
+      "name": "Fetch Microns RSS",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.1,
+      "position": [900, 380],
+      "parameters": {
+        "method": "GET",
+        "url": "https://newsletter.microns.io/feed",
+        "authentication": "none",
+        "options": {
+          "timeout": 30000,
+          "response": {"response": {"responseFormat": "text"}}
+        },
+        "sendHeaders": true,
+        "headerParameters": {
+          "parameters": [{"name": "User-Agent", "value": "DealSourcer/1.0"}]
+        }
+      },
+      "continueOnFail": true
+    },
+    {
+      "id": "a1b2c3d4-0005-4000-8000-000000000005",
+      "name": "Parse Microns + Combine EF",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [1120, 380],
+      "parameters": {
+        "mode": "runOnceForAllItems",
+        "jsCode": "// Get EF data accumulated from ancestor node\nconst ef_listings = $('Parse Empire Flippers').first()?.json?.ef_listings ?? [];\n\n// Parse Microns RSS (XML as text)\nconst xml = $input.first()?.json?.data ?? '';\nconst microns_listings = [];\n\nif (xml) {\n  const itemRe = /<item>([\\s\\S]*?)<\\/item>/g;\n  let m;\n  while ((m = itemRe.exec(xml)) !== null) {\n    const block = m[1];\n    const get = (tag) => {\n      const r = new RegExp(`<${tag}>(?:<!\\\\[CDATA\\\\[([\\\\s\\\\S]*?)\\\\]\\\\]>|([^<]*))`, 'i');\n      const match = r.exec(block);\n      return (match?.[1] || match?.[2] || '').trim();\n    };\n    const title = get('title');\n    const link = get('link') || get('guid');\n    const desc = get('description').replace(/<[^>]+>/g, '').trim().slice(0, 400);\n    if (title && link) {\n      microns_listings.push({\n        source: 'microns',\n        source_id: link.split('/').filter(Boolean).pop() || title.slice(0, 40),\n        title,\n        url: link,\n        asking_price: null, mrr: null, annual_profit: null,\n        niche: '', monetization: '', description: desc,\n      });\n    }\n  }\n}\n\nreturn [{ json: { ef_listings, microns_listings } }];"
+      }
+    },
+    {
+      "id": "a1b2c3d4-0006-4000-8000-000000000006",
+      "name": "Fetch Flippa",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.1,
+      "position": [1340, 380],
+      "parameters": {
+        "method": "GET",
+        "url": "https://flippa.com/search",
+        "authentication": "none",
+        "options": {
+          "timeout": 30000,
+          "response": {"response": {"responseFormat": "json"}}
+        },
+        "queryParameters": {
+          "parameters": [
+            {"name": "search_type", "value": "active"},
+            {"name": "sort", "value": "most_recent"},
+            {"name": "page", "value": "1"}
+          ]
+        },
+        "sendHeaders": true,
+        "headerParameters": {
+          "parameters": [
+            {"name": "Accept", "value": "application/json"},
+            {"name": "User-Agent", "value": "DealSourcer/1.0"}
+          ]
+        }
+      },
+      "continueOnFail": true
+    },
+    {
+      "id": "a1b2c3d4-0007-4000-8000-000000000007",
+      "name": "Merge All & Filter",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [1560, 380],
+      "parameters": {
+        "mode": "runOnceForAllItems",
+        "jsCode": "// Retrieve accumulated data from ancestor nodes\nconst ef_listings = $('Parse Empire Flippers').first()?.json?.ef_listings ?? [];\nconst microns_listings = $('Parse Microns + Combine EF').first()?.json?.microns_listings ?? [];\n\n// Parse Flippa response\nconst flippaRaw = $input.first()?.json ?? {};\nconst flippaItems = flippaRaw.data || flippaRaw.listings || flippaRaw.results || [];\nconst flippa_listings = flippaItems.map(item => {\n  const a = item.attributes || item;\n  return {\n    source: 'flippa',\n    source_id: String(item.id || a.id || ''),\n    title: a.title || a.site_name || '',\n    url: a.url?.startsWith('http') ? a.url : `https://flippa.com/listing/${item.id}`,\n    asking_price: a.buy_it_now_price || a.current_price || a.price || null,\n    mrr: a.average_monthly_revenue || a.revenue || null,\n    annual_profit: a.average_monthly_profit ? Number(a.average_monthly_profit) * 12 : null,\n    niche: a.property_type || a.site_type || '',\n    monetization: a.revenue_sources || '',\n    description: a.summary || a.description || '',\n  };\n}).filter(l => l.source_id);\n\n// Pet & Wellness keywords\nconst KEYWORDS = [\n  'pet','pets','dog','dogs','cat','cats','puppy','puppies',\n  'kitten','kittens','veterinary','vet ','vets','animal','animals',\n  'grooming','pet care','pet food','pet health','pet shop','pet store',\n  'pet supply','pet sitting','dog walking','pet insurance',\n  'pet tracker','pet app','pet training','宠物',\n  'rabbit','hamster','aquarium','reptile','ferret',\n  'wellness','well-being','wellbeing',\n  'supplement','nutraceutical',\n  'cbd','hemp','thc',\n  'meditation','mindfulness',\n  'holistic health','natural health',\n  'mental wellness','mental health app',\n  'sleep tracker','sleep app',\n  'probiotic','gut health',\n  'fitness tracker','health tracker',\n  'telehealth','telemedicine',\n  'health coaching','wellness coaching',\n  'yoga app','meditation app','健康',\n];\n\nconst all = [...ef_listings, ...microns_listings, ...flippa_listings];\nconst relevant = all.filter(l => {\n  const text = `${l.title} ${l.description} ${l.niche} ${l.monetization}`.toLowerCase();\n  return KEYWORDS.some(kw => text.includes(kw));\n});\n\nreturn [{\n  json: {\n    scraped_at: new Date().toISOString(),\n    total_scraped: all.length,\n    sources: {\n      empire_flippers: ef_listings.length,\n      microns: microns_listings.length,\n      flippa: flippa_listings.length,\n    },\n    pet_wellness_count: relevant.length,\n    listings: relevant,\n  }\n}];"
+      }
+    },
+    {
+      "id": "a1b2c3d4-0008-4000-8000-000000000008",
+      "name": "Any Results?",
+      "type": "n8n-nodes-base.if",
+      "typeVersion": 2,
+      "position": [1780, 380],
+      "parameters": {
+        "conditions": {
+          "options": {"caseSensitive": false, "leftValue": "", "typeValidation": "strict"},
+          "conditions": [
+            {
+              "id": "cond-001",
+              "leftValue": "={{ $json.pet_wellness_count }}",
+              "rightValue": 0,
+              "operator": {"type": "number", "operation": "gt"}
+            }
+          ],
+          "combinator": "and"
+        },
+        "options": {}
+      }
+    },
+    {
+      "id": "a1b2c3d4-0009-4000-8000-000000000009",
+      "name": "Format Feishu Card",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [2000, 280],
+      "parameters": {
+        "mode": "runOnceForAllItems",
+        "jsCode": "const data = $input.first().json;\nconst listings = data.listings || [];\nconst today = new Date().toLocaleDateString('zh-CN', {\n  timeZone: 'Asia/Shanghai',\n  year: 'numeric', month: 'long', day: 'numeric'\n});\n\nconst fmtPrice = (p) => p ? `$${Number(p).toLocaleString()}` : '—';\nconst fmtMrr = (m) => m ? ` | MRR ${fmtPrice(m)}/mo` : '';\n\nconst elements = [\n  {\n    tag: 'div',\n    text: {\n      tag: 'lark_md',\n      content: [\n        `**扫描**: ${data.total_scraped} 个项目  |  **匹配**: ${data.pet_wellness_count} 个`,\n        `来源: EF ${data.sources.empire_flippers} · Microns ${data.sources.microns} · Flippa ${data.sources.flippa}`,\n      ].join('\\n')\n    }\n  },\n  { tag: 'hr' },\n];\n\nfor (const l of listings.slice(0, 10)) {\n  elements.push({\n    tag: 'div',\n    text: {\n      tag: 'lark_md',\n      content: [\n        `**[${l.title}](${l.url})**`,\n        `来源: \\`${l.source}\\` · 要价: ${fmtPrice(l.asking_price)}${fmtMrr(l.mrr)}`,\n        l.description ? l.description.slice(0, 100).replace(/\\n/g, ' ') + '…' : '',\n      ].filter(Boolean).join('\\n')\n    }\n  });\n  elements.push({ tag: 'hr' });\n}\n\nif (listings.length > 10) {\n  elements.push({\n    tag: 'div',\n    text: { tag: 'lark_md', content: `_另有 ${listings.length - 10} 个项目，[查看完整数据](https://github.com/zacteqye72-art/deal-sourcer/blob/main/data/pet_wellness.json)_` }\n  });\n}\n\nreturn [{\n  json: {\n    msg_type: 'interactive',\n    card: {\n      config: { wide_screen_mode: true },\n      header: {\n        template: 'blue',\n        title: { tag: 'plain_text', content: `🐾 宠物 & Wellness 日报 · ${today}` }\n      },\n      elements\n    }\n  }\n}];"
+      }
+    },
+    {
+      "id": "a1b2c3d4-0010-4000-8000-000000000010",
+      "name": "Send to Feishu",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.1,
+      "position": [2220, 280],
+      "parameters": {
+        "method": "POST",
+        "url": "https://open.feishu.cn/open-apis/bot/v2/hook/REPLACE_WITH_YOUR_WEBHOOK_TOKEN",
+        "authentication": "none",
+        "sendBody": true,
+        "contentType": "json",
+        "body": "={{ JSON.stringify($json) }}",
+        "options": {"timeout": 15000}
+      }
+    }
+  ],
+  "connections": {
+    "Daily Schedule": {
+      "main": [[{"node": "Fetch Empire Flippers", "type": "main", "index": 0}]]
+    },
+    "Fetch Empire Flippers": {
+      "main": [[{"node": "Parse Empire Flippers", "type": "main", "index": 0}]]
+    },
+    "Parse Empire Flippers": {
+      "main": [[{"node": "Fetch Microns RSS", "type": "main", "index": 0}]]
+    },
+    "Fetch Microns RSS": {
+      "main": [[{"node": "Parse Microns + Combine EF", "type": "main", "index": 0}]]
+    },
+    "Parse Microns + Combine EF": {
+      "main": [[{"node": "Fetch Flippa", "type": "main", "index": 0}]]
+    },
+    "Fetch Flippa": {
+      "main": [[{"node": "Merge All & Filter", "type": "main", "index": 0}]]
+    },
+    "Merge All & Filter": {
+      "main": [[{"node": "Any Results?", "type": "main", "index": 0}]]
+    },
+    "Any Results?": {
+      "main": [
+        [{"node": "Format Feishu Card", "type": "main", "index": 0}],
+        []
+      ]
+    },
+    "Format Feishu Card": {
+      "main": [[{"node": "Send to Feishu", "type": "main", "index": 0}]]
+    }
+  },
+  "settings": {
+    "executionOrder": "v1",
+    "saveManualExecutions": true,
+    "callerPolicy": "workflowsFromSameOwner",
+    "errorWorkflow": ""
+  },
+  "active": false,
+  "_setup_notes": [
+    "1. Import this file in n8n via Workflows → Import from File",
+    "2. Open the 'Send to Feishu' node and replace REPLACE_WITH_YOUR_WEBHOOK_TOKEN with your Feishu bot webhook token",
+    "3. Set 'active: true' (toggle the workflow on) to enable daily runs at 01:00 UTC (09:00 CST)",
+    "4. Click 'Execute Workflow' to do a manual test run first"
+  ],
+  "meta": {
+    "instanceId": "deal-sourcer-v1"
+  }
+}

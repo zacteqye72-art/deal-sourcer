@@ -1,0 +1,30 @@
+
+Scraping empire_flippers...
+  [empire_flippers] Fetched 1000 listings
+
+Scraping acquire...
+  [acquire] Browse URL failed: https://acquire.com/listings: 404 Client Error: Not Found for url: https://acquire.com/listings
+  [acquire] Browse URL ok: https://acquire.com/ (status 200)
+  [acquire] browse page: no cards found (status 200)
+  [acquire] Sitemap index at https://acquire.com/sitemap.xml: 2 child sitemaps
+  [acquire] Found 1320 listing URLs in sitemap
+  [acquire] Fetched 200 listings
+
+Scraping sideprojectors...
+  [sideprojectors] Error fetching listing page: 403 Client Error: Forbidden for url: https://www.sideprojectors.com/project/all?type=side_project&listing_type=forsale
+
+Scraping microns...
+  [microns] Found 375 listing URLs in sitemap
+  [microns] Fetched 150 listings
+
+Scraping flippa...
+  [flippa] v3 API not accessible: 403 Client Error: Forbidden for url: https://flippa.com/api/v3/listings?filter%5Bstatus%5D=open&filter%5Bproperty_type%5D=established_website%2Cestablished_app%2Cstarter_site%2Csaas&sort_alias=-created_at&page%5Bnumber%5D=1&page%5Bsize%5D=50
+  [flippa] HTML fallback failed: 403 Client Error: Forbidden for url: https://flippa.com/search?search_type=active&sort=most_recent
+  [flippa] Fetched 0 listings
+
+--- Scrape complete: 1350 processed, 1350 new, 113 pet/wellness ---
+
+JSON written to data/all_listings.json (1350 listings)
+Exit code: 0
+
+JSON written to data/pet_wellness.json (113 listings)
