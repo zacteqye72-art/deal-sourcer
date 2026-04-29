@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta name="theme-color" content="#0a0a0a" />
+    <link rel="manifest" href="/manifest.webmanifest" />
+    <link rel="stylesheet" href="/styles.css" />
+    <title>Claudio</title>
+  </head>
+  <body>
+    <header class="topbar">
+      <div class="brand">Claudio</div>
+      <nav class="tabs">
+        <button data-tab="player" class="active">Player</button>
+        <button data-tab="profile">Profile</button>
+        <button data-tab="settings">Settings</button>
+      </nav>
+    </header>
+
+    <main>
+      <section id="player" class="pane active">
+        <div class="cover" id="cover">
+          <span class="dot" id="dot"></span>
+        </div>
+        <div class="meta">
+          <div class="title" id="title">— 还没在播 —</div>
+          <div class="artist" id="artist"></div>
+          <div class="reason" id="reason"></div>
+        </div>
+
+        <div class="controls">
+          <button id="prev">⟵</button>
+          <button id="playpause" class="primary">▶</button>
+          <button id="skip">⟶</button>
+        </div>
+
+        <audio id="audio" preload="auto"></audio>
+        <audio id="speech" preload="auto"></audio>
+
+        <div class="say" id="say"></div>
+
+        <form id="chat" class="chat">
+          <input id="chat-input" type="text" placeholder="跟 Claudio 说点什么…" autocomplete="off" />
+          <button type="submit">发送</button>
+        </form>
+      </section>
+
+      <section id="profile" class="pane">
+        <h2>你的语料</h2>
+        <p class="hint">这些就是 Claudio 真正读的"你是谁"。改完保存到 <code>user/</code>，重启服务器即可。</p>
+        <div id="taste-files"></div>
+      </section>
+
+      <section id="settings" class="pane">
+        <h2>Settings</h2>
+        <ul class="kv">
+          <li><span>Server</span><code id="srv-url"></code></li>
+          <li><span>WS</span><code id="ws-state">connecting…</code></li>
+          <li><span>Now playing</span><code id="now-snapshot">—</code></li>
+        </ul>
+        <h3>调度槽</h3>
+        <ul id="slots" class="slots"></ul>
+        <h3>近期反馈</h3>
+        <p class="hint">在 Player 上点👍/👎会写回 state.db 影响下一次决策。</p>
+      </section>
+    </main>
+
+    <script src="/app.js" type="module"></script>
+  </body>
+</html>

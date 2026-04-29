@@ -1,0 +1,34 @@
+{
+  "anchors": [
+    {
+      "id": "morning-citypop",
+      "name": "Morning City Pop",
+      "ncm_playlist_id": "2829883282",
+      "use_when": ["weekday-morning", "sunny"],
+      "seed_artists": ["山下達郎", "竹内まりや", "角松敏生"]
+    },
+    {
+      "id": "deep-focus",
+      "name": "Deep Focus / 后摇",
+      "ncm_playlist_id": "5167157790",
+      "use_when": ["coding", "late-night"],
+      "seed_artists": ["Mono", "World's End Girlfriend", "惘闻"]
+    },
+    {
+      "id": "rainy-day",
+      "name": "Rainy Afternoon",
+      "ncm_playlist_id": "2207264348",
+      "use_when": ["rainy"],
+      "seed_artists": ["坂本龍一", "Nils Frahm", "Hania Rani"]
+    },
+    {
+      "id": "wind-down",
+      "name": "Wind Down — 入睡前 30 分钟",
+      "ncm_playlist_id": "2829886829",
+      "use_when": ["pre-sleep"],
+      "seed_artists": ["Erik Satie", "Frédéric Chopin", "坂本龍一"]
+    }
+  ],
+  "blacklist_ncm_ids": [],
+  "favorite_ncm_ids": []
+}
